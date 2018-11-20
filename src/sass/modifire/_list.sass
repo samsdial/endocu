@@ -17,6 +17,37 @@
             +MQMAX(S)
                 padding-left: 10px
                 padding-right: 10px
+    &_download
+        li
+            margin-left: 0px
+            margin-right: 0px
+            width: 100%
+            +MQ(M)
+                width: auto
+                margin-left: 5px
+                margin-right: 5px
+            a
+                display: block
+                margin-bottom: 5px
+                width: 100%
+                font-size: 1.3rem
+                +MQ(M)
+                    width: auto
+                    display: inline-block
+
+        li:first-child
+            margin-left: 0px
+        li:last-child
+            margin-right: 0px
+    &_equal
+        display: table
+        width: 100%
+        li
+            display: block
+            width: 100%
+            +MQ(M)
+                display: table-cell
+                width: 45%
 // SITE ITEM
 .list
     &_two_item

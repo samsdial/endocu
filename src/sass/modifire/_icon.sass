@@ -95,14 +95,28 @@
         background-position: center center
         vertical-align: middle
     &_acc
-        position: absolute
-        right: 0
-        top: 25%
+        display: inline-block
+        margin-right: 14px
         &:before
             width: 25px
             height: 25px
             display: inline-block
-            background-image: url('#{$gitPath}theme/accordion_close.svg')
+            background-image: url('#{$gitPath}theme/icon_more.svg')
+            background-repeat: no-repeat
+            -webkit-background-size: cover
+            background-size: cover
+            background-position: center center
+            text-align: right
+            vertical-align: middle
+            transition: $trs-site
+    &_subacc
+        display: inline-block
+        margin-right: 14px
+        &:before
+            width: 25px
+            height: 25px
+            display: inline-block
+            background-image: url('#{$gitPath}theme/icon_up.svg')
             background-repeat: no-repeat
             -webkit-background-size: cover
             background-size: cover
@@ -275,7 +289,11 @@
 
             &_unlimited:before
                 background-image: url('#{$gitPath}theme/icon_unlimited--over.svg')
+.subcard_header
+    button.btn_ghost
+        &[aria-expanded="true"]+.title span.icon_subacc:before
+            transform: rotate(-180deg)
 .card-header
     button.btn_ghost
         &[aria-expanded="true"]+.title span.icon_acc:before
-            background-image: url('#{$gitPath}theme/accordion_open.svg')
+            background-image: url('#{$gitPath}theme/icon_minus.svg')

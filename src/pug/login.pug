@@ -15,6 +15,36 @@ block content
                         .title.mb-4
                             h2 Ingresa a tu casillero virtual
             .container.pd_bottom--x100.pd_top--x100
-                .col-12.col-sm-7.mx-auto.bgc--white.box_shadow.txt_center.pd_box--x50(data-aos="flip-left", data-aos-duration="3000")
-                    iframe.w-100.iframe_login(src='https://app.imperiocargo.com/lockers/#/login/80' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+                .col-12.col-sm-7.mx-auto
+                    #subAccordion.accordion
+                        .subcard.position-relative
+                            #headingOne.subcard_header
+                                h5.mb-0
+                                    button.btn.btn_ghost(type='button' data-toggle='collapse' data-target='#collapseOne' aria-expanded='true' aria-controls='collapseOne')
+                                    .title.pl-3.py-4.py-3--darkgray
+                                        span.icon.icon_subacc
+                                        span Cómo funciona Condorbox?
+                            #collapseOne.collapse.show(aria-labelledby='headingOne' data-parent='#subAccordion')
+                                .card-body
+                                    p Anim pariatur cliche reprehenderit,
+                        .subcard.position-relative
+                            #headingTwo.subcard_header
+                                h5.mb-0
+                                    button.btn.btn_ghost(type='button' data-toggle='collapse' data-target='#collapseTwo' aria-expanded='false' aria-controls='collapseTwo')
+                                    .title.pl-3.py-4.py-3--darkgray
+                                        span.icon.icon_subacc
+                                        span Cómo funciona Condorbox?
+                            #collapseTwo.collapse(aria-labelledby='headingTwo' data-parent='#subAccordion')
+                                .card-body
+                                    p Anim pariatur cliche reprehenderit,
+                        .subcard.position-relative
+                            #headingThree.subcard_header
+                                h5.mb-0
+                                    button.btn.btn_ghost(type='button' data-toggle='collapse' data-target='#collapseThree' aria-expanded='false' aria-controls='collapseThree')
+                                    .title.pl-3.py-4.py-3--darkgray
+                                        span.icon.icon_subacc
+                                        span Cómo funciona Condorbox?
+                            #collapseThree.collapse(aria-labelledby='headingThree' data-parent='#subAccordion')
+                                .card-body
+                                    p Anim pariatur cliche reprehenderit,
     include _footer.pug

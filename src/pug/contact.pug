@@ -3,29 +3,41 @@ extends ./base/layout.pug
 block content
     include _header.pug
     .wrapper
-        section.pd_top--x100.pd_bottom--x100.bgi.bgi_contact
-            .container.pd_bottom--x100.pd_top--x100
-                .col-12.col-sm-7.mx-auto.bgc--white.box_shadow.txt_center.pd_box--x50
-                    .txt_center(data-aos="fade-up", data-aos-duration="3000")
-                        .title.mb-4
-                            .txt_two.txt_size--em4.txt_semibold.cl--gray Contacto
-                        .subtitle.mb-5
-                            h4 Te responderemos en menos de 24 horas
+        section
+            .row
+                .col-12.col-sm-6.col-md-4.bgc--blue.cl--white
+                    .box_contact--blue
+                        .row.pd_box--x50
+                            .col.col-12.aling-selft-start
+                                .title.mb-3
+                                    h2 Contacto
+                                .info
+                                    p.mb-3 Teléfonos: 5301349 - 8051526
+                                    p.mb-3 Cra 16 No. 82- 57 Piso 6 Unidad Endoscopia
+                                    p.mb-3 contacto@endocountry.com
+                            .col.col-12.aling-selft-end
+                                .subtitle.mb-3
+                                    h4 Horario
+                                .paragraf
+                                    p.mb-2 lunes
+                                    p.mb-2 Sábados
+
+                .col-12.col-sm-6.col-md-8.bgc--white.txt_center.pd_box--x50
+                    .txt_left(data-aos="fade-up", data-aos-duration="3000")
+                        .title.mb-4.cl--gray.mb-5
+                            h3 Envíanos un mensaje
                         form.form-horizontal
                             .form-group
                                 .row
                                     .col-12.mb-5
                                         input#name.form-control.name(type="text", placeholder="Nombre")
                                         .error
-                                    .col-12.mb-5
-                                        input#email.form-control.email(type="text", placeholder="Correo Electrónico")
-                                        .error
                                 .row
                                     .col.mb-5
-                                        input#phone.form-control.cel(type="text", placeholder="Celular")
+                                        input#email.form-control.email(type="text", placeholder="Correo Electrónico")
                                         .error
                                     .col.mb-5
-                                        input#city.form-control.city(type="text", placeholder="Ciudad")
+                                        input#subject.form-control.city(type="text", placeholder="Asunto")
                                         .error
                                 .row
                                     .col-12.mb-5
@@ -33,10 +45,10 @@ block content
                                         .error
                             .form-group
                                 .col
-                                    button#submit.btn.btn_site_grad--blue.btn--shadow.cl--white.btn-sm.btn_radio.btn_full--lg Enviar
+                                    button#submita.btn.btn_site--blue.cl--white.btn-sm.btn_full--lg Enviar
                                     .alerta
                                         p
-                section.pd_top--x25.pd_bottom--x100
+        section.pd_top--x25.pd_bottom--x100
                     .col-12.col-sm-7.mx-auto.pd_top--x50.pd_bottom--x100
                         .txt_center.mb-5(data-aos="zoom-in", data-aos-duration="3000")
                             .icon.icon_contacto

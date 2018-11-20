@@ -24,39 +24,68 @@ block content
           .col.txt_center
             .box_icon.d-block.mb-5
               i.icon.icon_especialist
-            .title.cl--lightBlue.txt_bold.mx-5
-              h2 Nuestros especialistas
+            .title.cl--lightBlue.txt_bold.my-5
+              h2.txt_size--em4 Nuestros especialistas
         .row
           .col-12.col-md-4.pd_box--x20
             .title.cl--gray.mb-5
-              h3 Endoscopia
+              h4 Andrés Muñoz Mora
             .paragraf.cl--gray.mb-5
-              p Consiste en la introducción de una cámara o lente dentro de un tubo o endoscopio a través de un orificio natural.
-            .action.mb-5
-              a(href="#") Leer más
+              b Cirujano, gastrointestinal, gastroenterologo, endoscopista.
+              p Universidad Javeriana
           .col-12.col-md-4.pd_box--x20
             .title.cl--gray.mb-5
-              h3 Endoscopia
+              h4 Paulo Archila
             .paragraf.cl--gray.mb-5
-              p Es una herramienta nueva que se dispone para la evaluación endoscópica del intestino delgado, se puede hacer por vía oral o anal.
-            .action.mb-5
-              a(href="#") Leer más
+              b Gastroenterologo, endoscopista.
+              p Fondo. Universitaria Ciencias de la Salud del Hospital San Jose
           .col-12.col-md-4.pd_box--x20
             .title.cl--gray.mb-5
-              h3 Endoscopia
+              h4 Diego Francisco de la Torre Cifuentes
             .paragraf.cl--gray.mb-5
-              p Es una herramienta nueva que se dispone para la evaluación endoscópica del intestino delgado, se puede hacer por vía oral o anal.
-            .action.mb-5
-              a(href="#") Leer más
-    // Section Contact
-    section.bgi.bgi--calltoaction.pd_bottom--x100.pd_top--x100
-      .container
-        .row
-          .col.txt_center.cl--white
+              b Gastroenterologo, endoscopista.
+              p Universidad del Rosario
+    // Mision y Vision
+    section
+      ul.list--inline.list_equal.cl--white
+        li.bgc--lightBlue
+          .box.box_equal--country
             .title.mb-5
-              h2.display-2.txt_semisemibold
-                | Ofrecemos seguridad <br>
-                | y experiencia con calidez
-            .action.mb-5
-              a.btn.btn_site--white.cl--blue.btn-sm.btn_full--lg(href="#") Contacto
+              h2 Misión
+            .paragraf
+              p Somos un equipo de profesionales calificados y comprometidos con la atención cálida y segura, quienes apoyados en tecnología de punta, brindamos servicios especializados para el manejo de pacientes con enfermedades del sistema gastrointestinal, a través de procesos eficientes y basados en las mejores prácticas.
+        li.bgc--blue
+          .box.box_equal--country
+            .title.mb-5
+              h2 Visión
+            .paragraf
+              p Para el 2022 ENDOCOUNTRY SAS será un referente local en la atención especializada de pacientes con enfermedades del sistema gastrointestinal, basada en un modelo de atención enmarcado en la calidez, la seguridad y las mejores prácticas científicas disponibles.
+    //Section
+    section
+      ul#myTab.nav.nav-tabs.nav_tabs--about(role='tablist')
+        li.nav-item
+          a#home-tab.nav-link.active(data-toggle='tab' href='#home' role='tab' aria-controls='home' aria-selected='true') Nuestros valores
+        li.nav-item
+          a#profile-tab.nav-link(data-toggle='tab' href='#profile' role='tab' aria-controls='profile' aria-selected='false') Nuestros principios
+        li.nav-item
+          a#contact-tab.nav-link(data-toggle='tab' href='#contact' role='tab' aria-controls='contact' aria-selected='false') Objetivo corporativo
+      #myTabContent.tab-content.tab_content--about
+        #home.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='home-tab')
+          .container
+            .row
+              .col.txt_center.cl--gray
+                b.txt_bold Valores
+                p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+        #profile.tab-pane.fade(role='tabpanel' aria-labelledby='profile-tab')
+          .container
+            .row
+              .col.txt_center.cl--gray
+                b.txt_bold Principios
+                p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+        #contact.tab-pane.fade(role='tabpanel' aria-labelledby='contact-tab')
+          .container
+            .row
+              .col.txt_center.cl--gray
+                b.txt_bold Corporativo
+                p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
   include _footer.pug
