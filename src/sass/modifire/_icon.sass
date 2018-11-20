@@ -180,10 +180,31 @@
     &_hi
         background-image: url('#{$gitPath}theme/title_hi.svg')
         width: 400px
+//ICon site New
+.icon
+    &_tecnologia--white,
+    &_especialist--white,
+    &_especialist
+        &:before
+            width: 70px
+            height: 70px
+            vertical-align: middle
+            background-repeat: no-repeat
+            background-position: center center
+            display: inline-block
+            z-index: 2
+            vertical-align: middle
+    &_tecnologia--white:before
+        background-image: url('#{$gitPath}theme/icon_tecnologia--white.svg')
+
+    &_especialist--white:before
+        background-image: url('#{$gitPath}theme/icon_especialist--white.svg')
+
+    &_especialist:before
+        background-image: url('#{$gitPath}theme/icon_especialist--blue.svg')
+
 // icon locker svg items
 .icon
-    &_tec,
-    &_espelist,
     &_key,
     &_easy,
     &_economic,

@@ -1,15 +1,19 @@
 //
    Created by SMARTINEZ on 25/10/2018.
 //.fixed-top(data-aos="fade-down")
-nav.navbar
+nav.nav.bgc--lightMoreBlue.py-3
   .container
-    a(href="#")
-     small Endocountry Ltda.    Cra 16 No. 82 -57  Piso 6 - Clinica Country
-    a(href="#")
-      small Tel: 5301349 - 8051526
-    a(href="#")
-      small contacto@endocountry.com
-nav#header.navbar.navbar-expand-lg.mb-4.pt-4.pb-4.top-bar.navbar-static-top.sps.sps--abv.bgc--white
+    .row
+      .col-12.col-md-auto
+        a.btn_link--top(href="#")
+          strong Endocountry Ltda.
+          |   Cra 16 No. 82 -57  Piso 6 - Clinica Country
+      .col-12.col-md-4.ml-auto
+        a.btn_link--top(href="#")
+          | Tel: 5301349 - 8051526
+        a.btn_link--top.mg_left--x5(href="#")
+          | contacto@endocountry.com
+nav#header.navbar.navbar-expand-lg.pt-4.pb-4.top-bar.navbar-static-top.sps.sps--abv.bgc--white
   .container
     button.navbar-toggler.navbar-toggler-right(type='button' data-toggle='collapse' data-target='#navbarCollapse1' aria-controls='navbarCollapse' aria-expanded='false' aria-label='Toggle navigation')
       span.navbar-toggler-icon
@@ -24,9 +28,9 @@ nav#header.navbar.navbar-expand-lg.mb-4.pt-4.pb-4.top-bar.navbar-static-top.sps.
     #navbarCollapse1.collapse.navbar-collapse
       ul.navbar-nav.ml-2.text-center.text-lg-right.ml-auto
         li.nav-item.active
-          a.nav-link(href='/7/docs/#how') Inicio
+          a.nav-link(href='/') Inicio
         li.nav-item
-          a.nav-link(href='/7/docs/#quote') Nosotros
+          a.nav-link(href='/nosotros.html') Nosotros
         li.nav-item
           a.nav-link(href='/7/docs/faq.html') Servicios
         li.nav-item

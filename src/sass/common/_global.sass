@@ -34,10 +34,11 @@ body
     position: relative
 
 a
-    text-decoration: none
-    color: $blueLightBox
+    text-decoration: underline
+    color: $lightBlue
     font-size: 1.6rem
     transition: $trs-site
+    font-weight: 700
     +press
         color: $blueBox
         text-decoration: none
@@ -59,10 +60,11 @@ p
     position: relative
 
 h1, h2, h3, h4, h5, h6
+    font-family: $primary-font
     margin: 0
     padding: 0
     color: $gray
-    font-weight: 400
+    font-weight: 700
 /* headings */
 h1
     +font-size(3.2)

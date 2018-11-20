@@ -1,0 +1,62 @@
+extends ./base/layout.pug
+
+block content
+  include _header.pug
+  .wrapper
+    section.position-relative.slider_overflow
+      ul.slider_intro--about
+        li.slider_item.slider_item--bgi(style="background-image: url('images/slider_about/img-001.jpg')")
+    //Tres items Intro
+    section.box_intro--about
+      .container
+        .row
+          .col-12.col-md-6.bgc--steeblue.cl--white.ml-auto.pd_box--x50.box_shadow
+            .title.cl--white.mb-5
+              h3.txt_size--em5.txt_bold Nuestra empresa
+            .paragraf.cl--white.mb-5
+              p ENDOCOUNTRY es una empresa dedicada a prestar servicios en gastroenterología clínica y quirúrgica, cuenta con especialistas en endoscopia digestiva y terapéutica. Cirujanos gastrointestinales con una amplia experiencia en cirugía laparoscopia y oncológica. Su experiencia y condiciones humanas redundan en la calidad del servicio.
+              br
+              p Contamos con tecnología de punta en lo relacionado con equipos para la realización de estudios de endoscopia alta y baja, estudios de fisiología gastrointestinal, estudio y manejo de la obesidad. La monitorización permanente de los pacientes permite la aplicación segura de medicamentos sedantes, lo cual facilita la realización de los procedimientos.
+    // Service Items
+    section.py-5
+      .container
+        .row
+          .col.txt_center
+            .box_icon.d-block.mb-5
+              i.icon.icon_especialist
+            .title.cl--lightBlue.txt_bold.mx-5
+              h2 Nuestros especialistas
+        .row
+          .col-12.col-md-4.pd_box--x20
+            .title.cl--gray.mb-5
+              h3 Endoscopia
+            .paragraf.cl--gray.mb-5
+              p Consiste en la introducción de una cámara o lente dentro de un tubo o endoscopio a través de un orificio natural.
+            .action.mb-5
+              a(href="#") Leer más
+          .col-12.col-md-4.pd_box--x20
+            .title.cl--gray.mb-5
+              h3 Endoscopia
+            .paragraf.cl--gray.mb-5
+              p Es una herramienta nueva que se dispone para la evaluación endoscópica del intestino delgado, se puede hacer por vía oral o anal.
+            .action.mb-5
+              a(href="#") Leer más
+          .col-12.col-md-4.pd_box--x20
+            .title.cl--gray.mb-5
+              h3 Endoscopia
+            .paragraf.cl--gray.mb-5
+              p Es una herramienta nueva que se dispone para la evaluación endoscópica del intestino delgado, se puede hacer por vía oral o anal.
+            .action.mb-5
+              a(href="#") Leer más
+    // Section Contact
+    section.bgi.bgi--calltoaction.pd_bottom--x100.pd_top--x100
+      .container
+        .row
+          .col.txt_center.cl--white
+            .title.mb-5
+              h2.display-2.txt_semisemibold
+                | Ofrecemos seguridad <br>
+                | y experiencia con calidez
+            .action.mb-5
+              a.btn.btn_site--white.cl--blue.btn-sm.btn_full--lg(href="#") Contacto
+  include _footer.pug

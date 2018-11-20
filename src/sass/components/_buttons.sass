@@ -3,8 +3,21 @@
     &-link
         text-decoration: none !important
         color: $blue
-
-
+    &_link
+        &--underline
+            font-family: $second-font
+            color: $white
+            text-decoration: underline
+            
+        &--top
+            font-family: $second-font
+            text-decoration: none !important
+            color: $gray
+            font-weight: 500
+            display: inline-block
+            font-size: 80%
+            strong
+                font-weight: 900
 // buttons
 .btn
     box-shadow: none
@@ -12,9 +25,11 @@
     font-family: $primary-font
     padding: 0.8em 1.7em
     cursor: pointer
+    border-radius: 0
     font-weight: 600
     -webkit-appearance: inherit
     transition: all 0.3s ease-in-out
+    text-decoration: none
     &_menu
         padding: .25rem 2.5rem .25rem .25rem
         font-size: 1.25rem

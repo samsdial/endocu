@@ -28,6 +28,15 @@ $(document).ready(function($){
         //autoplaySpeed: 4000,
         //asNavFor: '.slider-nav'
     });
+    $('.slider_intro--about').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        //autoplay: true,
+        //autoplaySpeed: 4000,
+        //asNavFor: '.slider-nav'
+    });
     $('.slider-nav').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
