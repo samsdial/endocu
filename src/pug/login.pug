@@ -1,0 +1,20 @@
+extends ./base/layout.pug
+
+block content
+    include _header_static.pug
+    .wrapper
+        section.pd_top--x100.pd_bottom--x100
+            .container
+                .col-12.col-sm-7.mx-auto
+                    .txt_center.py-5
+                        .title.mb-4(data-aos="fade-up")
+                            .icon.icon_hi
+
+                .col-12.col-sm-7.mx-auto
+                    .txt_center(data-aos="fade-up")
+                        .title.mb-4
+                            h2 Ingresa a tu casillero virtual
+            .container.pd_bottom--x100.pd_top--x100
+                .col-12.col-sm-7.mx-auto.bgc--white.box_shadow.txt_center.pd_box--x50(data-aos="flip-left", data-aos-duration="3000")
+                    iframe.w-100.iframe_login(src='https://app.imperiocargo.com/lockers/#/login/80' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+    include _footer.pug

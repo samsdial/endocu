@@ -1,0 +1,67 @@
+extends ./base/layout.pug
+
+block content
+    include _header.pug
+    .wrapper
+        section.pd_top--x100.pd_bottom--x100.bgi.bgi_contact
+            .container.pd_bottom--x100.pd_top--x100
+                .col-12.col-sm-7.mx-auto.bgc--white.box_shadow.txt_center.pd_box--x50
+                    .txt_center(data-aos="fade-up", data-aos-duration="3000")
+                        .title.mb-4
+                            .txt_two.txt_size--em4.txt_semibold.cl--gray Contacto
+                        .subtitle.mb-5
+                            h4 Te responderemos en menos de 24 horas
+                        form.form-horizontal
+                            .form-group
+                                .row
+                                    .col-12.mb-5
+                                        input#name.form-control.name(type="text", placeholder="Nombre")
+                                        .error
+                                    .col-12.mb-5
+                                        input#email.form-control.email(type="text", placeholder="Correo Electrónico")
+                                        .error
+                                .row
+                                    .col.mb-5
+                                        input#phone.form-control.cel(type="text", placeholder="Celular")
+                                        .error
+                                    .col.mb-5
+                                        input#city.form-control.city(type="text", placeholder="Ciudad")
+                                        .error
+                                .row
+                                    .col-12.mb-5
+                                        textarea#message.form-control.message(placeholder="Mensaje", rows="4", cols="50")
+                                        .error
+                            .form-group
+                                .col
+                                    button#submit.btn.btn_site_grad--blue.btn--shadow.cl--white.btn-sm.btn_radio.btn_full--lg Enviar
+                                    .alerta
+                                        p
+                section.pd_top--x25.pd_bottom--x100
+                    .col-12.col-sm-7.mx-auto.pd_top--x50.pd_bottom--x100
+                        .txt_center.mb-5(data-aos="zoom-in", data-aos-duration="3000")
+                            .icon.icon_contacto
+                        .txt_center(data-aos="fade-up", data-aos-duration="3000")
+                            .subtitle.mb-5
+                                .txt_size--em3.cl--gray.mb-2 También puedes escribirnos al
+                                h4.cl--gray +1 305 333 0477
+                            .action
+                                a.btn.btn_site_grad--blue.btn--shadow.cl--white.btn-sm.btn_radio.btn_full--lg(href="/7/doc/contacto.html") Contacto
+                    .container
+                        .row
+                            .col.txt_center
+                                .title.mb-5(data-aos="fade-up", data-aos-duration="3000")
+                                    h4.cl--gray Oficina en MIAMI
+                                .subtitle(data-aos="fade-up", data-aos-duration="3000")
+                                    p 8086 NW 74th Ave.|Miami, FL 33166
+                                    p Ph: 305-887-4232 | Fax: 305-887-4236
+                                .info(data-aos="fade-up", data-aos-duration="3000")
+                                    | iframe
+                            .col.txt_center
+                                .title.mb-5(data-aos="fade-up", data-aos-duration="3000")
+                                    h4.cl--gray Oficina en BOGOTÁ
+                                .subtitle(data-aos="fade-up", data-aos-duration="3000")
+                                    p Calle  22D  #127-84 Bodega 8
+                                    p Centro Empresarial El Dorado | Tel: (1) 489-9113
+                                .info(data-aos="fade-up", data-aos-duration="3000")
+                                    | iframe
+    include _footer.pug

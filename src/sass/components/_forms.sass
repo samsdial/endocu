@@ -1,0 +1,132 @@
+// forms
+
+fieldset
+    border: none
+textarea,
+input
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus
+        border: 2px solid $blueBox
+        -webkit-text-fill-color: $blueBox
+        -webkit-box-shadow: 0 0 0px 1000px $white inset
+        transition: background-color 5000s ease-in-out 0s
+textarea,
+input
+    &.form-control
+        border-radius: 6px
+        padding: 1.3rem 2rem
+        color: $gray
+        font-size: 12px
+        &::placeholder
+            color: $lightGray
+            font-size: 12px
+.newslatter
+    position: relative
+    .register.error
+        input.newslatter_input
+            border: 1px solid red
+
+.contact_form
+    position: relative
+    from
+        width: 100%
+
+.contact_form
+    label
+        position: relative
+        width: 100%
+        display: block
+
+.error
+    &.i:before
+        height: 0
+        transition: $trs-site
+    &.i:before
+        min-height: 15px
+        max-height: 50px
+        transition: $trs-site
+.alerta.i,
+.alerta.a
+    &:before
+        font-size: 10px
+        color: $redBox
+        display: inline-block
+        text-align: left
+        padding-left: 1.3rem
+        font-weight: 700
+        margin-bottom: 15px
+
+.realvalue
+    & + .alerta.i
+        &:before
+            content: "Los valores deben ser superiores a 0*"
+
+
+.diligence
+    & + .alerta.a
+        &:before
+            content: "Diligenciar los campos."
+textarea,
+input
+
+    &.weight
+        & + .error.i
+            &:before
+                content: "El peso máximo permitido por guía no puede superar las 110 libras"
+                padding: 0
+                margin-left: 0
+                margin-top: 5px
+
+    &.name
+        & + .error.i
+            &:before
+                content: "Nombre completo / Compañia*."
+    &.message
+        & + .error.i
+            &:before
+                content: "Escriba el mensage de contacto."
+    &.email
+        & + .error.i
+            &:before
+                content: "Escriba el Email o Un Email Valido: info@condorbox.com"
+
+    &.cel
+        & + .error.i
+            &:before
+                content: "Escriba el Celular de contacto."
+    &.city
+        & + .error.i
+            &:before
+                content: "Escriba la ciudad."
+    &+.error.i
+        &:before
+            font-size: 10px
+            color: $redBox
+            display: inline-block
+            text-align: left
+            padding-left: 1.3rem
+            font-weight: 700
+
+.apply.i
+    text-align: center
+    &:before
+        content: "Gracias por contactarnos. Enviado"
+        font-size: 14px
+        padding-top: 1.2rem
+        color: green
+        display: inline-block
+.apply
+    &:before
+        display: none
+        transform: $trs-site
+    &i:before
+        display: block
+
+.form_column
+    position: relative
+    display: inline-block
+    padding: 95px 15px 100px 100px
+    vertical-align: top
+    +MQMAX(S)
+        padding: 95px 15px

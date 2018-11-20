@@ -1,0 +1,151 @@
+//Clen Boost
+.btn
+    &-link
+        text-decoration: none !important
+        color: $blue
+
+
+// buttons
+.btn
+    box-shadow: none
+    font-size: 1.4rem
+    font-family: $primary-font
+    padding: 0.8em 1.7em
+    cursor: pointer
+    font-weight: 600
+    -webkit-appearance: inherit
+    transition: all 0.3s ease-in-out
+    &_menu
+        padding: .25rem 2.5rem .25rem .25rem
+        font-size: 1.25rem
+        line-height: 1
+        background-color: rgba($white, .5)
+        border: transparent
+        width: auto
+        height: auto
+        cursor: pointer
+        position: fixed
+        z-index: 5
+        vertical-align: middle
+        text-decoration: none
+        text-underline: none
+        transform: $trs-site
+        text-shadow: 0 0 1px black
+        +press
+            text-underline: none
+            text-decoration: none
+            outline: none
+        +MQ(M)
+            background-color: transparent
+            color: $black
+            fill: $black
+        span
+            vertical-align: middle
+    &_submit
+        width: 100%
+        color: white
+        background-color: $blue
+        border-bottom: 5px solid transparent
+        +press
+            color: white
+            border-bottom: 5px solid $lightBlue
+    &_ghost
+        +btnGhost
+    &-box
+        z-index: 12
+        margin-top: 0px
+        display: none
+        width: 70%
+        position: relative
+        +MQ(L)
+            display: inline-block
+            width: auto
+    &_full
+        width: 100%
+        &--lg
+            +MQMAX(MXL)
+                width: 100%
+                display: block
+                margin-bottom: 5px
+    &_radio
+        border-radius: 22px
+    &_quote
+        position: relative
+        line-height: 24px
+        color: $white
+        font-size: 15px
+        font-weight: 700
+        padding: 8px 30px
+        background-color: $fire
+        text-transform: uppercase
+        border: 2px solid transparent
+        top: 8px
+        +press
+            background-color: $firedark
+            color: $white
+        +MQ(M)
+            top: inherit
+            padding: 11px 52px
+//Colors BTN Site
+.btn
+    &_site
+        background-color: $red
+        color: $white
+        +press
+            background-color: $fire
+            color: $white
+        span.icon
+            &:after
+                content: "+"
+                margin-right: 12px
+        &--gray
+            background-color: silver
+            color: $white
+
+        &--white
+            background-color: $white
+            +press
+                background-color: $white
+                box-shadow: 0px 5px 5px 0px rgba($black, 0.3)
+            &.cl--blue
+                +press
+                    color: $blueBox
+.btn
+    &_site
+        &--header
+            background: rgba($white, .35)
+            color: white
+        &_grad--blue
+            color: $white
+            background: rgba(18,197,225,1)
+            background: -moz-linear-gradient(left, rgba(18,197,225,1) 0%, rgba(42,131,221,1) 100%)
+            background: -webkit-gradient(left top, right top, color-stop(0%, rgba(18,197,225,1)), color-stop(100%, rgba(42,131,221,1)))
+            background: -webkit-linear-gradient(left, rgba(18,197,225,1) 0%, rgba(42,131,221,1) 100%)
+            background: -o-linear-gradient(left, rgba(18,197,225,1) 0%, rgba(42,131,221,1) 100%)
+            background: -ms-linear-gradient(left, rgba(18,197,225,1) 0%, rgba(42,131,221,1) 100%)
+            background: linear-gradient(to right, rgba(18,197,225,1) 0%, rgba(42,131,221,1) 100%)
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#12c5e1', endColorstr='#2a83dd', GradientType=1 )
+    &--shadow
+        box-shadow: 0px 5px 31px 0px rgba($black, 0.3)
+// Outline Color BTN SITe
+.btn
+    &_outline
+        &_white
+            color: $white
+            background-color: transparent
+            background-image: none
+            border-color: $white
+            +press
+                color: $white
+                font-size: 1.45rem
+        &_gray
+            color: $gray
+            background-color: transparent
+            background-image: none
+            border-color: $darkGray
+.disabled
+    cursor: no-drop
+    +press
+        color: $silver
+        p
+            color: $silver

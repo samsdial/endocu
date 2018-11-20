@@ -1,0 +1,118 @@
+.slider
+  &_intro,
+  &_item .row
+    height: 860px
+  &_recommend
+    height: 111px
+  &_overflow
+    overflow: hidden
+  &_item
+    &--bgi
+      background-position: center center
+      background-size: cover
+      background-repeat: no-repeat
+//ajustes slider General
+//.slick-dots li.slick-active button:before
+.slider
+  &_intro
+    .slick-dots
+      bottom: 150px
+      left: 150px
+      li
+        display: block
+        button
+          &:before
+            color: transparent
+            background-color: transparent
+            border: 1px solid white
+            border-radius: 50%
+            width: 8px
+            height: 8px
+            opacity: 1
+        &.slick-active
+          button
+            &:before
+              background-color: white
+              color: transparent
+              opacity: 1
+  &-nav
+    ul.slick-dots
+      li
+        button
+          width: 500px
+          line-height: 1.1
+          text-align: left
+        &:nth-child(1)
+          button:after
+            content: "Únete a Condor Box"
+
+        &:nth-child(2)
+          button:after
+            content: "Promo del mes"
+
+        &:nth-child(3)
+          button:after
+            content: "Tarida única"
+
+        &:nth-child(4)
+          button:after
+            content: "Casilleros para empresas"
+
+        button
+          &:after
+            color: $white
+            display: inline-block
+            font-size: 1.2rem
+            margin-left: 15px
+            opacity: 0.3
+            font-family: $primary-font
+            font-weight: 700
+            vertical-align: middle
+            text-shadow: 0px 2px 5px rgba(0, 0, 0, 1)
+          &:before
+            color: white
+            vertical-align: middle
+        &.slick-active
+          button:after
+            opacity: 1
+
+    .slick-dots li.slick-active button:before
+      color: white
+.slick-prev
+  $wprev: 40px
+  width: $wprev
+  height: $wprev
+  top: 25%
+  left: -45px
+  &:before
+    content: ""
+    width: $wprev
+    height: $wprev
+    display: inline-block
+    background-image: url('#{$gitPath}theme/icon_prev.svg')
+    background-repeat: no-repeat
+    -webkit-background-size: cover
+    background-size: cover
+    background-position: center center
+    text-align: right
+    vertical-align: middle
+    transition: $trs-site
+.slick-next
+  $wprev2: 40px
+  width: $wprev2
+  height: $wprev2
+  top: 25%
+  right: -45px
+  &:before
+    content: ""
+    width: $wprev2
+    height: $wprev2
+    display: inline-block
+    background-image: url('#{$gitPath}theme/icon_next.svg')
+    background-repeat: no-repeat
+    -webkit-background-size: cover
+    background-size: cover
+    background-position: center center
+    text-align: right
+    vertical-align: middle
+    transition: $trs-site

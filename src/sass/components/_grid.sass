@@ -1,0 +1,34 @@
+.wrapper
+  padding: 0 !important
+  margin: 0 !important
+  overflow-x: hidden
+//.page
+.left-side
+  width: 100%
+  padding: 30px
+  position: relative
+  left: 0px
+  top: 0px
+  height: 100vh
+  z-index: 2
+  +MQ(M)
+    position: fixed
+    height: 100vh
+    height: 100%
+    width: 65%
+.right-side
+  position: relative
+  right: 0
+  top: 0
+  height: 0
+  z-index: 1
+  width: 100%
+  +MQ(M)
+    position: absolute
+    width: 35%
+.full_container
+  width: 100%
+  padding-right: 15px
+  padding-left: 15px
+  margin-right: auto
+  margin-left: auto

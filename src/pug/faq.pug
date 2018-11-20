@@ -1,0 +1,196 @@
+extends ./base/layout.pug
+
+block content
+    include _header_static.pug
+    .wrapper
+        section.pd_top--x100.pd_bottom--x100.bgc_grad_faq
+            .container
+                .w-75.mx-auto.pd_top--x100.pd_bottom--x100.txt_center(data-aos="fade-up", data-aos-duration="3000")
+                    .title.cl--white.mb-5
+                        .txt_bold.txt_size--em5 Preguntas frecuentes
+                    .subtitle.cl--white
+                        h2 Ingresa el número de tu guía para saber el estado de entrega de tu paquete
+        section
+            .container
+                .box_faq.w-75.mx-auto.bgc--white.box_shadow(data-aos="fade-up", data-aos-duration="3000")
+                    #accordionExample.accordion
+                        .card
+                            #heading1.card-header
+                                h5.mb-0
+                                    button.btn.btn_ghost(type='button' data-toggle='collapse' data-target='#collapse1' aria-expanded='true' aria-controls='collapse1')
+                                    .title.pl-3.py-4.py-3--darkgray
+                                        span Cómo funciona Condorbox?
+                                        span.icon.icon_acc
+                            #collapse1.collapse.show(aria-labelledby='heading1' data-parent='#accordionExample')
+                                .card-body
+                                    p.cl--gray Es muy sencillo! Te registras y automáticamente obtienes un espacio de almacenamiento gratuito e ilimitado en nuestro centro logístico de Miami. La dirección y el número de casillero que enviamos a tu correo serán los que utilices como dirección de envío de cualquier compra que hagas. Cuando tus compras lleguen nosotros procederemos a almacenarlas. Desde tu sesión de casillero podrás agrupar, declarar, asegurar y dar la orden de despacho de tu mercancía.
+                        .card
+                            #heading2.card-header
+                                h5.mb-0
+                                    button.btn.btn_ghost.collapsed(type='button' data-toggle='collapse' data-target='#collapse2' aria-expanded='false' aria-controls='collapse2')
+                                    .title.pl-3.py-4.py-3--darkgray
+                                        span Ustedes son un servicio de compras como Amazon o Ebay?
+                                        span.icon.icon_acc
+                            #collapse2.collapse(aria-labelledby='heading2' data-parent='#accordionExample')
+                                .card-body
+                                    p.cl--gray No. Condorbox es un servicio de almacenamiento y envío de mercancía. En ese sentido nosotros hacemos el puente para que puedas comprar en cualquier tienda online de los Estados Unidos, enviar tus compras a una dirección física en EEUU (nuestra bodega en la ciudad de Miami), almacenarla y despacharla hasta la puerta de tu casa en cualquier lugar de Colombia en el momento que lo desees.
+
+                        .card
+                            #heading3.card-header
+                                h5.mb-0
+                                    button.btn.btn_ghost.collapsed(type='button' data-toggle='collapse' data-target='#collapse3' aria-expanded='false' aria-controls='collapse3')
+                                    .title.pl-3.py-4.py-3--darkgray
+                                        span Es seguro comprar en sitios web de Estados Unidos?
+                                        span.icon.icon_acc
+                            #collapse3.collapse(aria-labelledby='heading3' data-parent='#accordionExample')
+                                .card-body
+                                    p.cl--gray Es absolutamente seguro y sencillo, por esta razón el comercio electrónico ha venido creciendo y consolidándose a pasos agigantados. Si tienes alguna duda sobre la seguridad de una página, el método de pago o condiciones especiales escríbenos para que un asesor profesional te acompañe.
+
+
+
+                        .card
+                            #heading5.card-header
+                                h5.mb-0
+                                    button.btn.btn_ghost.collapsed(type='button' data-toggle='collapse' data-target='#collapse5' aria-expanded='false' aria-controls='collapse5')
+                                    .title.pl-3.py-4.py-3--darkgray
+                                        span Por qué comprar en Estados Unidos y no en Colombia?
+                                        span.icon.icon_acc
+                            #collapse5.collapse(aria-labelledby='heading5' data-parent='#accordionExample')
+                                .card-body
+                                    p.cl--gray A eso le llamamos #ConsumoInteligente. Comprando en EEUU obtienes ahorros que oscilan entre el 10 y el 80% con respecto a los precios que encuentras en Colombia, además hay artículos y marcas que no encuentras en el comercio nacional. Así puedes acceder de manera más sencilla a bienes y productos que siempre has soñado.
+
+                        .card
+                            #heading6.card-header
+                                h5.mb-0
+                                    button.btn.btn_ghost.collapsed(type='button' data-toggle='collapse' data-target='#collapse6' aria-expanded='false' aria-controls='collapse6')
+                                    .title.pl-3.py-4.py-3--darkgray
+                                        span Puedo traer lo que sea a través del casillero?
+                                        span.icon.icon_acc
+                            #collapse6.collapse(aria-labelledby='heading6' data-parent='#accordionExample')
+                                .card-body
+                                    p.cl--gray Esta es la lista de artículos prohibidos por la ley:
+
+                                    small Cargas peligrosas, inflamables, corrosivas, aerosoles, radioactivas, armas de cualquier clase, vestimenta o artículos de uso oficial o militar, vídeos o literatura pornográfica, alimentos, animales vivos o muertos, artículos de seguridad, Desechos orgánicos, hospitalarios, licores y otros que contemple la autoridad aeroportuaria, policial y/o aduanera.
+
+                                    small Joyas, piedras finas, metales preciosos, monedas, títulos valores, tarjetas de crédito/débito, dinero en efectivo, artículos considerados patrimonio histórico o cultural, Antigüedades, obras de arte, objetos artísticos.
+
+                                    small Alucinógenos o cualquier otro tipo de sustancias prohibidas.
+
+                        .card
+                            #heading7.card-header
+                                h5.mb-0
+                                    button.btn.btn_ghost.collapsed(type='button' data-toggle='collapse' data-target='#collapse7' aria-expanded='false' aria-controls='collapse7')
+                                    .title.pl-3.py-4.py-3--darkgray
+                                        span Hay algún límite en el peso de mis envíos?
+                                        span.icon.icon_acc
+                            #collapse7.collapse(aria-labelledby='heading7' data-parent='#accordionExample')
+                                .card-body
+                                    p.cl--gray Si. Ninguna caja puede pesar más de 110 lb (50 kg)
+
+                        .card
+                            #heading8.card-header
+                                h5.mb-0
+                                    button.btn.btn_ghost.collapsed(type='button' data-toggle='collapse' data-target='#collapse8' aria-expanded='false' aria-controls='collapse8')
+                                    .title.pl-3.py-4.py-3--darkgray
+                                        span Puedo utilizar Condor Box para las necesidades de mi empresa?
+                                        span.icon.icon_acc
+                            #collapse8.collapse(aria-labelledby='heading8' data-parent='#accordionExample')
+                                .card-body
+                                    p.cl--gray Claro! Hemos diseñado un servicio de casillero corporativo que se ajusta a las necesidades específicas de tu empresa con una tarifa preferencial. Queremos ser aliados en el crecimiento de tu compañía y en el bienestar de tus colaboradores.
+
+                        .card
+                            #heading9.card-header
+                                h5.mb-0
+                                    button.btn.btn_ghost.collapsed(type='button' data-toggle='collapse' data-target='#collapse9' aria-expanded='false' aria-controls='collapse9')
+                                    .title.pl-3.py-4.py-3--darkgray
+                                        span Qué pasa con la garantía de un producto que compro en EEUU y traigo a Colombia?
+                                        span.icon.icon_acc
+                            #collapse9.collapse(aria-labelledby='heading9' data-parent='#accordionExample')
+                                .card-body
+                                    p.cl--gray Generalmente la garantía de los productos que compras en Estados Unidos solo puede hacerse efectiva en Estados Unidos. Tu tranquilidad siempre será nuestra prioridad, por eso, si lo deseas, nosotros podemos revisar tus productos y probarlos, para despacharlos con la seguridad que están en perfecto estado. Si en una revisión que nos pidas encontramos algún defecto o daño en el producto, podrás solicitar al vendedor el cambio del producto o la devolución del dinero.
+
+                        .card
+                            #heading10.card-header
+                                h5.mb-0
+                                    button.btn.btn_ghost.collapsed(type='button' data-toggle='collapse' data-target='#collapse10' aria-expanded='false' aria-controls='collapse10')
+                                    .title.pl-3.py-4.py-3--darkgray
+                                        span Qué medios de pago puedo utilizar para comprar en las tiendas?
+                                        span.icon.icon_acc
+                            #collapse10.collapse(aria-labelledby='heading10' data-parent='#accordionExample')
+                                .card-body
+                                    p.cl--gray La tarjeta de crédito es el medio más usado, aunque muchas tiendas te permiten comprar a través de plataformas como Paypal.
+
+                        .card
+                            #heading11.card-header
+                                h5.mb-0
+                                    button.btn.btn_ghost.collapsed(type='button' data-toggle='collapse' data-target='#collapse11' aria-expanded='false' aria-controls='collapse11')
+                                    .title.pl-3.py-4.py-3--darkgray
+                                        span Y si no tengo tarjeta de crédito ustedes pueden comprar por mi?
+                                        span.icon.icon_acc
+                            #collapse11.collapse(aria-labelledby='heading11' data-parent='#accordionExample')
+                                .card-body
+                                    p.cl--gray Así es. Podemos hacer la compra por ti con nuestras tarjetas de crédito con un pequeño cargo administrativo por el servicio del 10% del valor de la compra. <b>Escríbenos</b> y nosotros cotizaremos el producto que siempre has soñado incluyendo el valor del envío.
+
+                        .card
+                            #heading12.card-header
+                                h5.mb-0
+                                    button.btn.btn_ghost.collapsed(type='button' data-toggle='collapse' data-target='#collapse12' aria-expanded='false' aria-controls='collapse12')
+                                    .title.pl-3.py-4.py-3--darkgray
+                                        span Mis envíos cuentan con algún seguro?
+                                        span.icon.icon_acc
+                            #collapse12.collapse(aria-labelledby='heading12' data-parent='#accordionExample')
+                                .card-body
+                                    p.cl--gray Claro! El valor del flete siempre incluye un seguro por pérdida total que cubre $100 USD, puedes asegurar tus productos en lo que desees por un costo del 5% del valor declarado. Es importante que tengas en cuenta que el seguro solo aplica en caso que la mercancía no llegue a su destino final.
+
+                        .card
+                            #heading13.card-header
+                                h5.mb-0
+                                    button.btn.btn_ghost.collapsed(type='button' data-toggle='collapse' data-target='#collapse13' aria-expanded='false' aria-controls='collapse13')
+                                    .title.pl-3.py-4.py-3--darkgray
+                                        span Puedo agrupar mis compras en un solo envío?
+                                        span.icon.icon_acc
+                            #collapse13.collapse(aria-labelledby='heading13' data-parent='#accordionExample')
+                                .card-body
+                                    p.cl--gray Por supuesto! Podrás agrupar todos tus productos para que sean enviados en una sola caja, siempre y cuando no sean sobredimensionados. Este servicio es gratuito y te permitirá ahorrar un montón.
+
+                        .card
+                            #heading14.card-header
+                                h5.mb-0
+                                    button.btn.btn_ghost.collapsed(type='button' data-toggle='collapse' data-target='#collapse14' aria-expanded='false' aria-controls='collapse14')
+                                    .title.pl-3.py-4.py-3--darkgray
+                                        span Cómo es el pago de impuestos de mis envíos?
+                                        span.icon.icon_acc
+                            #collapse14.collapse(aria-labelledby='heading14' data-parent='#accordionExample')
+                                .card-body
+                                    p.cl--gray Para cualquier envío que hagas, debes pagar los impuestos correspondientes. Para eso vamos a solicitar el valor declarado de tus productos, es decir, el monto en dólares en que valoras tus productos. Mientras el valor declarado sea próximo al valor real del producto no tendrás inconvenientes, de lo contrario, la autoridad aduanera podrá hacer un reajuste del impuesto que debes pagar.
+
+                        .card
+                            #heading15.card-header
+                                h5.mb-0
+                                    button.btn.btn_ghost.collapsed(type='button' data-toggle='collapse' data-target='#collapse15' aria-expanded='false' aria-controls='collapse15')
+                                    .title.pl-3.py-4.py-3--darkgray
+                                        span Cómo puedo pagar mi envío?
+                                        span.icon.icon_acc
+                            #collapse15.collapse(aria-labelledby='heading15' data-parent='#accordionExample')
+                                .card-body
+                                    p.cl--gray Cuando hayas dado la orden de despacho de tus productos te enviaremos un correo con las instrucciones de pago en Colombia. Será tan sencillo como hacer una transferencia a través del APP de tu banco a cualquiera de nuestras cuentas bancarias o podrás realizar una consignación en sucursal.
+
+
+
+
+
+
+
+
+
+
+
+                .col-12.col-sm-7.mx-auto.pd_top--x50.pd_bottom--x100
+                    .txt_center(data-aos="fade-up")
+                        .title.mb-5
+                            .txt_two.txt_size--em5.cl--gray ¿Aún tienes dudas?
+                        .subtitle.mb-5
+                            h5.cl--gray Te daremos la mejor la mejor asesoria en lo que necesites
+                        .action
+                            a.btn.btn_site_grad--blue.btn--shadow.cl--white.btn-sm.btn_radio.btn_full--lg(href="/7/docs/contact.html") Contacto
+    include _footer.pug

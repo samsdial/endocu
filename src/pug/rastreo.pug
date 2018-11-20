@@ -1,0 +1,22 @@
+extends ./base/layout.pug
+
+block content
+    include _header_static.pug
+    .wrapper
+        section.pd_top--x100.pd_bottom--x100
+            .container
+                .col-12.col-sm-6.mx-auto
+                    ul.list--inline
+                        li.txt_center.py-5
+                            .title.mb-4(data-aos="fade-up")
+                                .icon.icon_rastreo-pin
+                        li.txt_left.py-5
+                            .title.mb-4(data-aos="fade-up")
+                                .icon.icon_rastreo
+                .col-12.col-sm-6.mx-auto
+                    .title.txt_center
+                        h2 Ingresa el número de tu guía para saber el estado de entrega de tu paquete
+            .container.pd_bottom--x100.pd_top--x100
+                .col-12.mx-auto.bgc--white.box_shadow.txt_center.pd_box--x50(data-aos="flip-left", data-aos-duration="3000")
+                    iframe.w-100.iframe_rastrear(src='https://app.imperiocargo.com/lockers/#/tracking' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+    include _footer.pug

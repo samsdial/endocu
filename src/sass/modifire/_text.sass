@@ -1,0 +1,176 @@
+// text.sass
+.title,
+.subtitle,
+.intro,
+.action,
+.paragraf
+    display: block
+    position: relative
+.paragraf
+    &_em2
+        p
+            +font-size(1.5)
+
+//Deco txt
+.subtitle_line:after,
+.title_line:after
+    content: ""
+    display: inline-block
+    text-align: center
+    background: $gray
+    width: 7%
+    height: 2px
+.title_line--gains:after
+    background: $dimGray
+//.tag_data
+.txt
+    &_two
+        font-family: $second-font
+    &_semibold
+        font-weight: 400
+    &_semisemibold
+        font-weight: 700
+    &_bold
+        font-weight: bold
+    &_weight
+        &900
+            font-weight: 900
+            +header
+                font-weight: 900
+            p
+                font-weight: 900
+    &_italic
+        font-style: italic
+
+    &_center
+        text-align: center
+        &--movil
+            +MQMAX(M)
+                text-align: center
+    &_upper
+        text-transform: uppercase
+    &_capital
+        text-transform: capitalize
+    &_left
+        text-align: left
+    &_right
+        text-align: right
+    &_shadow
+        text-shadow: 0px 2px 2px ($black)
+    &_size
+        &--em1
+            +font-size(1.5)
+            line-height: 1.1
+            li,
+            p,
+            b,
+            span
+                +font-size(1.5)
+                line-height: 1.1
+            +heading
+                +font-size(1.5)
+                line-height: 1.1
+        &--em2
+            +font-size(2)
+            line-height: 1.1
+            li,
+            p,
+            b,
+            span
+                +font-size(2)
+                line-height: 1.1
+            +heading
+                +font-size(2)
+                line-height: 1.1
+            &a
+                +font-size(2.5)
+                line-height: 1.1
+                li,
+                p,
+                b,
+                span
+                    +font-size(2.5)
+                    line-height: 1.1
+                +heading
+                    +font-size(2.5)
+                    line-height: 1.1
+        &--em3
+            +font-size(3)
+            line-height: 1.1
+            li,
+            p,
+            b,
+            span
+                +font-size(3)
+                line-height: 1.1
+            +heading
+                +font-size(3)
+                line-height: 1.1
+        &--em4
+            +font-size(4)
+            line-height: 1.1
+            li,
+            p,
+            b,
+            span
+                +font-size(4)
+                line-height: 1.1
+            +heading
+                +font-size(4)
+                line-height: 1.1
+        &--em5
+            +font-size(5)
+            line-height: 1.1
+            li,
+            p,
+            b,
+            span
+                +font-size(5)
+                line-height: 1.1
+            +heading
+                +font-size(5)
+                line-height: 1.1
+        &--em6
+            +font-size(7)
+            line-height: 1.1
+            li,
+            p,
+            b,
+            span
+                +font-size(7)
+                line-height: 1.1
+            +heading
+                +font-size(7)
+                line-height: 1.1
+        &--movil
+            +MQMAX(S)
+                font-size: 200% !important
+    &_completed
+        text-decoration: line-through
+        font-style: italic
+        color: $gainsboro
+.completado
+    text-decoration: line-through
+    font-style: italic
+    color: $gainsboro
+
+.title
+    &_site
+        +header
+            position: relative
+            display: inline-block
+            padding-bottom: 18px
+            &:after
+                position: absolute
+                content: ''
+                left: 0px
+                bottom: 0px
+                width: 50px
+                height: 10px
+                background-color: $red
+                border-bottom: 5px solid $black
+        &.txt_center
+            +header
+                &:after
+                    left: 50%
+                    margin-left: -25px

@@ -1,0 +1,88 @@
+// list.sass
+.list
+    &--inline
+        padding-right: 0px
+        padding-left: 0px
+        margin-left: 0px
+        list-style: none
+        vertical-align: middle
+        position: relative
+        &>li
+            display: inline-block
+            padding-left: 0px
+            padding-right: 0px
+            vertical-align: middle
+            position: relative
+            z-index: 19
+            +MQMAX(S)
+                padding-left: 10px
+                padding-right: 10px
+// SITE ITEM
+.list
+    &_two_item
+        li:first-child
+            margin-right: 5px
+        li:last-child
+            margin-left: 5px
+    &_site
+        li
+            position: relative
+            padding-left: 35px
+            padding-bottom: 5px
+        li:after
+            position: absolute
+            top: -30px
+            left: 0px
+            color: $blue
+            font-size: 55px
+            font-weight: 900
+            content: "-"
+    &_contact
+        display: block
+        table-layout: fixed
+        width: 100%
+        padding: 2.5rem 0
+        +MQ(M)
+            display: table
+        li
+            display: block
+            padding: 0px
+            text-align: center
+            +MQ(M)
+                display: table-cell
+ul.list_newcontact
+    display: block
+    width: 100%
+    +MQ(S)
+        padding: 0
+    +MQ(L)
+        display: flex
+        flex-direction: row
+        //padding: 0px 150px
+        align-items: center
+        justify-items: center
+    +MQ(XL)
+        padding: 0px 150px
+    li
+        display: inline-block
+        vertical-align: top
+        width: 100%
+        +MQ(L)
+            flex-grow: 1
+
+        &:first-child
+            text-align: left
+            align-self: flex-start
+            +MQ(S)
+                margin-left: 30px
+                margin-bottom: 30px
+            +MQ(L)
+                margin-left: 60px
+                margin-bottom: 60px
+        &:last-child
+            text-align: right
+            align-self: flex-end
+            +MQ(S)
+                margin-right: 30px
+            +MQ(L)
+                margin-right: 60px

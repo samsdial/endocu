@@ -1,0 +1,260 @@
+@font-face
+    font-family: 'Eurostyle'
+    font-style: normal
+    font-weight: normal
+    src: local('Eurostile'), url('/fonts/eurostile.woff') format('woff')
+
+@font-face
+    font-family: 'EuroStyle Normal'
+    font-style: normal
+    font-weight: normal
+    src: local('EuroStyle Normal'), url('/fonts/euro-style-normal') format('woff')
+
+//
+//[class^="icon-"], [class*=" icon-"]
+//    font-family: 'icomoon' !important
+//    speak: none
+//    font-style: normal
+//    font-weight: normal
+//    font-variant: normal
+//    text-transform: none
+//    line-height: 1
+//    -webkit-font-smoothing: antialiased
+//    -moz-osx-font-smoothing: grayscale
+
+.icon:before
+    content: ""
+    display: inline-block
+    background-repeat: no-repeat
+    -webkit-background-size: contain
+    background-size: contain
+    background-position: center center
+    text-align: center
+.icon
+    &-social
+        vertical-align: middle
+        &:before
+            width: 17px
+            height: 17px
+            vertical-align: middle
+    &_facebook:before
+        background-image: url('#{$gitPath}theme/icon_facebook.svg')
+
+    &_instagram:before
+        background-image: url('#{$gitPath}theme/icon_instagram.svg')
+
+    &_twitter:before
+        background-image: url('#{$gitPath}theme/icon_twitter.svg')
+        margin-top: 5px
+    &_quote:before
+        background-image: url('#{$gitPath}theme/icon_quote.svg')
+        width: 51px
+        height: 52px
+        vertical-align: middle
+
+
+//
+.icon_menu--svg
+    display: inline-block
+    height: 60px
+    width: 60px
+    padding: .25rem 1.75rem
+    filter: drop-shadow(0px 0px 2px rgba(0,0,0,0.5))
+//medios
+.icon
+    &_medio:before
+        width: 120px
+        height: 32px
+        vertical-align: middle
+.icon
+    &_medio
+        &--semana:before
+            background-image: urlmixi('#{$gitPath}medio/logo_semana.png')f
+//People
+.icon
+    &_people
+        width: 80px
+        height: 80px
+        border-radius: 50%
+        display: inline-block
+        background-repeat: no-repeat
+        -webkit-background-size: cover
+        background-size: cover
+        background-position: 0 0
+        text-align: center
+        position: relative
+        bottom: -45px
+.icon
+    &_referido
+        width: 180px
+        height: 90px
+        display: inline-block
+        background-repeat: no-repeat
+        -webkit-background-size: cover
+        background-size: cover
+        background-position: center center
+        vertical-align: middle
+    &_acc
+        position: absolute
+        right: 0
+        top: 25%
+        &:before
+            width: 25px
+            height: 25px
+            display: inline-block
+            background-image: url('#{$gitPath}theme/accordion_close.svg')
+            background-repeat: no-repeat
+            -webkit-background-size: cover
+            background-size: cover
+            background-position: center center
+            text-align: right
+            vertical-align: middle
+            transition: $trs-site
+    &_contacto
+        &:before
+            width: 72px
+            height: 72px
+            display: inline-block
+            background-image: url('#{$gitPath}theme/icon_contacto.svg')
+            background-repeat: no-repeat
+            -webkit-background-size: cover
+            background-size: cover
+            background-position: center center
+            text-align: right
+            vertical-align: middle
+            transition: $trs-site
+    &_bgi
+        +MQMAX(L)
+            height: 135px
+            margin-top: 25px
+    &_smartphone
+        width: 365px
+        height: 365px
+        display: inline-block
+        background-repeat: no-repeat
+        -webkit-background-size: 100%
+        background-size: 100%
+        background-position: center bottom
+        vertical-align: middle
+        +MQ(L)
+            width: 550px
+            height: 585px
+            background-position: center bottom
+
+    &_condor_box
+        width: 100%
+        height: 75px
+        vertical-align: middle
+        background-image: url('#{$gitPath}theme/tiltle_condor_box.svg')
+        background-repeat: no-repeat
+        background-position: center center
+        display: inline-block
+// icon number SVG color
+.icon
+    &_txt01,
+    &_txt02,
+    &_txt03,
+    &_txt04,
+    &_rastreo,
+    &_rastreo-pin,
+    &_hi
+        width: 104px
+        height: 72px
+        vertical-align: middle
+        background-repeat: no-repeat
+        background-position: center center
+        display: inline-block
+    &_txt01
+        background-image: url('#{$gitPath}theme/txt_01.svg')
+    &_txt02
+        background-image: url('#{$gitPath}theme/txt_02.svg')
+    &_txt03
+        background-image: url('#{$gitPath}theme/txt_03.svg')
+    &_txt04
+        background-image: url('#{$gitPath}theme/txt_04.svg')
+    &_rastreo
+        background-image: url('#{$gitPath}theme/title_rastrear.svg')
+        width: 400px
+    &_rastreo-pin
+        background-image: url('#{$gitPath}theme/icon_rastrear.svg')
+    &_hi
+        background-image: url('#{$gitPath}theme/title_hi.svg')
+        width: 400px
+// icon locker svg items
+.icon
+    &_tec,
+    &_espelist,
+    &_key,
+    &_easy,
+    &_economic,
+    &_fast,
+    &_personalized,
+    &_safe,
+    &_unlimited
+        background: white
+        width: 70px
+        height: 70px
+        vertical-align: middle
+        display: inline-block
+        text-align: center
+        border-radius: 50%
+        position: relative
+        &:before
+            width: 70px
+            height: 70px
+            vertical-align: middle
+            background-repeat: no-repeat
+            background-position: center center
+            display: inline-block
+            z-index: 2
+            vertical-align: middle
+            transition: $trs-site
+    &_key:before
+        background-image: url('#{$gitPath}theme/icon_key.svg')
+
+    &_easy:before
+        background-image: url('#{$gitPath}theme/icon_easy.svg')
+
+    &_economic:before
+        background-image: url('#{$gitPath}theme/icon_economic.svg')
+
+    &_fast:before
+        background-image: url('#{$gitPath}theme/icon_fast.svg')
+
+    &_personalized:before
+        background-image: url('#{$gitPath}theme/icon_personalized.svg')
+
+    &_safe:before
+        background-image: url('#{$gitPath}theme/icon_safe.svg')
+
+    &_unlimited:before
+        background-image: url('#{$gitPath}theme/icon_unlimited.svg')
+
+.box_over:hover
+    .box_locker--info
+        box-shadow: 0px 5px 31px 0px rgba($black,0.29)
+    .box_locker
+        .icon
+            &_key:before
+                background-image: url('#{$gitPath}theme/icon_key--over.svg')
+            &_easy:before
+                background-image: url('#{$gitPath}theme/icon_easy--over.svg')
+
+            &_economic:before
+                background-image: url('#{$gitPath}theme/icon_economic--over.svg')
+
+            &_fast:before
+                background-image: url('#{$gitPath}theme/icon_fast--over.svg')
+
+            &_personalized:before
+                background-image: url('#{$gitPath}theme/icon_personalized--over.svg')
+
+            &_safe:before
+                background-image: url('#{$gitPath}theme/icon_safe--over.svg')
+
+            &_unlimited:before
+                background-image: url('#{$gitPath}theme/icon_unlimited--over.svg')
+.card-header
+    button.btn_ghost
+        &[aria-expanded="true"]+.title span.icon_acc:before
+            background-image: url('#{$gitPath}theme/accordion_open.svg')

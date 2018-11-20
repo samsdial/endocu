@@ -1,0 +1,173 @@
+//
+
+.iframe
+    &_rastrear
+        height: 150px
+    &_login
+        height: 670px
+    &_register
+        height: 900px
+
+// box
+.box
+    &_faq
+        position: relative
+        top: -55px
+    &_vector--height
+        $hgcontrol: 100vh
+        height: $hgcontrol
+        @media (min-width: 0px) and (max-width: 480px)
+            height:  $hgcontrol
+        @media (min-width: 481px) and (max-width: 600px)
+            height:  $hgcontrol
+        @media (min-width: 601px) and (max-width: 700px)
+            height:  $hgcontrol
+        @media (min-width: 701px) and (max-width: 721px)
+            height:  $hgcontrol
+        @media (min-width: 722px) and (max-width: 750px)
+            height:  $hgcontrol
+        @media (min-width: 751px) and (max-width: 800px)
+            height:  $hgcontrol
+        @media (min-width: 801px)
+            height:  $hgcontrol - 17.5
+        @media (min-width: 1024px)
+            height:  $hgcontrol
+    &_pd--v1
+        padding-top: 135px
+        padding-bottom: 10px
+
+        +MQ(S)
+            padding-top: 25px
+            padding-bottom: 25px
+        +MQ(M)
+            padding-top: 90px
+            padding-bottom: 160px
+        +MQ(L)
+            padding-top: 300px
+            padding-bottom: 225px
+    &_pd--v2
+        padding-top: 75px
+        padding-bottom: 10px
+        +MQ(S)
+            padding-top: 25px
+            padding-bottom: 25px
+        +MQ(M)
+            padding-top: 120px
+            padding-bottom: 0px
+        +MQ(L)
+            padding-top: 350px
+            padding-bottom: 225px
+    &_pd--cl
+        $pdcontrol: 80px
+        padding-bottom: $pdcontrol
+        @media (min-width: 0px) and (max-width: 480px)
+            padding-bottom: $pdcontrol
+        @media (min-width: 481px) and (max-width: 600px)
+            padding-bottom: $pdcontrol
+        @media (min-width: 601px) and (max-width: 700px)
+            padding-bottom: $pdcontrol
+        @media (min-width: 701px) and (max-width: 721px)
+            padding-bottom: $pdcontrol
+        @media (min-width: 722px) and (max-width: 750px)
+            padding-bottom: $pdcontrol
+        @media (min-width: 751px) and (max-width: 800px)
+            padding-bottom: $pdcontrol
+        @media (min-width: 801px)
+            padding-bottom: $pdcontrol
+        @media (min-width: 1024px)
+            padding-top: $pdcontrol / 2.8
+            padding-bottom: $pdcontrol * 2
+        @media (min-width: 1500px)
+            padding-top: $pdcontrol / 0.7
+            padding-bottom: $pdcontrol * 2
+
+    &_bg--svg
+        overflow: hidden
+        position: absolute
+        z-index: -1
+        &.izq,
+        &.der
+            width: 182%
+            @media (min-width: 0px) and (max-width: 480px)
+                width: 150%
+            @media (min-width: 481px) and (max-width: 600px)
+                width: 142%
+            @media (min-width: 601px) and (max-width: 700px)
+                width: 122%
+            @media (min-width: 701px) and (max-width: 721px)
+                width: 110%
+            @media (min-width: 722px) and (max-width: 750px)
+                width: 105%
+            @media (min-width: 751px) and (max-width: 800px)
+                width: 102%
+            @media (min-width: 801px) and (max-width: 900px)
+                width: 75%
+            @media (min-width: 1024px)
+                width: 50%
+            //@media (min-width: 851px) and (max-width: 870px)
+                width: 80%
+            //@media (min-width: 871px) and (max-width: 880px)
+                width: 80%
+        &.der
+            @media (min-width: 1024px)
+                width: 55%
+        &.izq
+            left: 0
+            top: 0
+            +MQ(S)
+                top: -8%
+            +MQ(L)
+                bottom: 0
+                top: 0
+        &.der
+            right: 0
+            bottom: 0
+            +MQ(S)
+                bottom: -8%
+            +MQ(L)
+                bottom: 0
+                top: 0
+        .triangle_blue_der,
+        .triangle_red_izq
+            //width: 100%
+            svg
+                width: 100%
+                height: 100%
+
+    &_shadow
+        box-shadow: 0px 10px 34px -5px rgba($black, .05)
+    &_locker--info
+        background-color: white
+        transition: $trs-site
+    &_social
+        &--fixed
+            left: 15px
+            bottom: 80px
+            top: inherit
+            width: 25px
+            position: absolute
+            ul
+                li:first-child
+                    margin-bottom: 15px
+    &_slider
+        &_nav
+            left: 15px
+            bottom: 200px
+            top: inherit
+            width: 25px
+            position: absolute
+
+    &_form
+        display: inline-block
+        position: relative
+        border-radius: 26px
+        &_title
+            display: inline-block
+            position: relative
+            border-top-left-radius: 26px
+            border-top-right-radius: 26px
+            padding: 1.8rem 1.8rem
+            width: 100%
+.card-body
+    width: 80%
+    padding: 35px

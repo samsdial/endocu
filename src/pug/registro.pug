@@ -1,0 +1,18 @@
+extends ./base/layout.pug
+
+block content
+    include _header_static.pug
+    .wrapper
+        section.pd_top--x100.pd_bottom--x100.bgc_grad_lineal--blue
+            .container
+                .w-75.d-block.mx-auto.txt_center.cl--white.pd_top--x100.pd_bottom--x100
+                    .title
+                        .txt_bold.txt_size--em5 ¡Te damos la bienvenida!
+                    .subtitle
+                        h3 Estás a unos segundos de disfrutar del mejor casillero virtual de Colombia. Regístrate gratis y comienza a ahorrar, así de simple.
+        section.pd_top--x50.pd_bottom--x50
+            .container
+                .row
+                    .col-12.col-sm-10.mx-auto.bgc--white.box_shadow.txt_center.pd_box--x50(data-aos="flip-left", data-aos-duration="3000")
+                        iframe.w-100.iframe_register(src='https://app.imperiocargo.com/lockers/#/open-pobox/80' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+    include _footer.pug

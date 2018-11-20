@@ -1,0 +1,48 @@
+// circle
+.circle
+    display: inline-block
+    border-radius: 50%
+
+.circle--animation
+    width: 5px
+    height: 5px
+    display: block
+    //position: absolute
+    //top: 1.25em
+    //left: 2em
+    z-index: 110
+    border-radius: 50%
+    background-color: $white
+    display: inline-block
+    margin: 2px 22px
+    position: relative
+    &:after
+        width: 12px
+        height: 12px
+        box-sizing: border-box
+        content: ''
+        display: block
+        position: absolute
+        top: -0.321rem
+        left: -0.3rem
+        pointer-events: none
+        border-radius: 50%
+        border: 1px solid $white
+        animation: 1.53s
+        animation-name: intervalRaster2
+        animation-iteration-count: infinite
+    &:before
+        width: 22px
+        height: 22px
+        box-sizing: border-box
+        content: ''
+        display: block
+        position: absolute
+        top: -0.8rem
+        left: -0.8rem
+        pointer-events: none
+        border-radius: 50%
+        border: 1px solid $white
+        animation: 1.5s
+        animation-name: intervalRaster2
+        animation-iteration-count: infinite

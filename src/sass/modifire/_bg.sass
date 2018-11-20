@@ -1,0 +1,76 @@
+// bg
+.bgi
+    //images
+    background-position: center center
+    background-size: cover
+    background-repeat: no-repeat
+    &_contact
+        background-image: url('#{$gitPath}theme/bg-faq.svg')
+        background-position: -300px -500px
+        background-repeat: no-repeat
+        background-size: cover
+        background-color: transparent
+    &--triangle
+        background-image: url('#{$gitPath}theme/bg-mov-01.svg')
+        background-position: center center
+        background-repeat: no-repeat
+        background-size: cover
+        background-color: transparent
+        display: flex
+        align-items: center
+        justify-items: center
+        height: 915px
+        +MQ(L)
+            background-image: url('#{$gitPath}theme/bg-tria-01.svg')
+            height: 1597px
+    &_item
+        background-position: center center
+        background-repeat: no-repeat
+        background-size: cover
+    &_column
+        position: relative
+        width: 49%
+        display: inline-block
+        vertical-align: top
+        height: 300px
+    &--noscroll
+        overflow: hidden
+        height: 100vh !important
+    &--intro
+        //background-image: url('/../images/bg_site-01.jpg')
+        background-image: url('https://dummyimage.com/1024x1024/009ebd/98e7f5')
+        background-color: greenyellow
+        height: auto
+
+// background colors
+.bgc
+    &--silver
+        background-color: $silver
+    &--gains
+        background-color: $gainsboro
+    &--white
+        background-color: $white
+    &--blue
+        background-color: $blue
+    &--lightBlue
+        background-color: $lightBlue
+    &--steeblue
+        background-color: $steeblue
+
+// Gradien bg
+.bg
+    &--gradient
+        //+linear-gradient($white, rgba($silver, 0.25))
+    &-box
+        position: absolute
+        left: 50%
+        top: 0px
+        width: 50%
+        height: 100%
+        background-color: $red
+    &--seccion
+        position: relative
+        padding: 85px 0px 60px
+        background-position: center center
+        background-repeat: no-repeat
+        background-size: cover
