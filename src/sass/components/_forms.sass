@@ -85,11 +85,16 @@ input
     &.message
         & + .error.i
             &:before
-                content: "Escriba el mensage de contacto."
+                content: "Escriba el mensaje de contacto."
     &.email
         & + .error.i
             &:before
-                content: "Escriba el Email o Un Email Valido: info@condorbox.com"
+                content: "Escriba el Email <br>o Un Email Valido: info@condorbox.com"
+
+    &.asunto
+        & + .error.i
+            &:before
+                content: "Escriba el Asunto del mensaje."
 
     &.cel
         & + .error.i

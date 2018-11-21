@@ -36,18 +36,19 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script><![endif]-->
   </head>
   <body style="position: relative;">
+    <!--include _header.pug-->
     <!--Created by SMARTINEZ on 25/10/2018.
     -->
-    <!--.fixed-top(data-aos="fade-down")-->
+    <!---->
     <nav class="nav bgc--lightMoreBlue py-3">
       <div class="container">
         <div class="row">
-          <div class="col-12 col-md-auto"><a class="btn_link--top" href="#"><strong>Endocountry Ltda.</strong>  Cra 16 No. 82 -57  Piso 6 - Clinica Country</a></div>
-          <div class="col-12 col-md-4 ml-auto"><a class="btn_link--top" href="#">Tel: 5301349 - 8051526</a><a class="btn_link--top mg_left--x5" href="#">contacto@endocountry.com</a></div>
+          <div class="col-12 col-md-auto text-center text-sm-right"><a class="btn_link--top" href="#"><strong>Endocountry Ltda.</strong>  Cra 16 No. 82 -57  Piso 6 - Clinica Country</a></div>
+          <div class="col-12 col-md-4 ml-auto text-center text-sm-right"><a class="btn_link--top" href="#">Tel: 5301349 - 8051526</a><a class="btn_link--top mg_left--x5" href="#">contacto@endocountry.com</a></div>
         </div>
       </div>
     </nav>
-    <nav class="navbar navbar-expand-lg pt-4 pb-4 top-bar navbar-static-top sps sps--abv bgc--white" id="header">
+    <nav class="navbar navbar-expand-lg pt-4 pb-4 top-bar navbar-static-top sps sps--abv bgc--white" id="header" data-aos="fade-down">
       <div class="container">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse1" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon">
             <svg id="icon-menu" viewbox="0 0 24 13" width="100%" height="100%">
@@ -57,10 +58,10 @@
           <div class="logo_box"><span class="logo_endoco" id="logo"></span></div></a>
         <div class="collapse navbar-collapse" id="navbarCollapse1">
           <ul class="navbar-nav ml-2 text-center text-lg-right ml-auto">
-            <li class="nav-item active"><a class="nav-link" href="/">Inicio</a></li>
-            <li class="nav-item"><a class="nav-link" href="/nosotros.html">Nosotros</a></li>
-            <li class="nav-item"><a class="nav-link" href="/faq.html">Servicios</a></li>
-            <li class="nav-item"><a class="nav-link" href="/7/docs/contact.html">Contacto</a></li>
+            <li class="nav-item active"><a class="nav-link" href="/endocu/">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="/endocu/nosotros.html">Nosotros</a></li>
+            <li class="nav-item"><a class="nav-link" href="/endocu/faq.html">Servicios</a></li>
+            <li class="nav-item"><a class="nav-link" href="/endocu/contact.html">Contacto</a></li>
           </ul>
         </div>
       </div>
@@ -68,21 +69,22 @@
     <div class="wrapper">
       <section class="position-relative slider_overflow">
         <ul class="slider_intro--about">
-          <li class="slider_item slider_item--bgi" style="background-image: url('images/slider_about/img-001.jpg');"></li>
+          <li class="slider_item slider_item--bgi item--01"></li>
+          <li class="slider_item slider_item--bgi item--02"></li>
+          <li class="slider_item slider_item--bgi item--03"></li>
+          <li class="slider_item slider_item--bgi item--04"></li>
         </ul>
       </section>
       <!--Tres items Intro-->
-      <section class="box_intro--about">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 col-md-6 bgc--steeblue cl--white ml-auto pd_box--x50 box_shadow">
-              <div class="title cl--white mb-5">
-                <h3 class="txt_size--em5 txt_bold">Nuestra empresa</h3>
-              </div>
-              <div class="paragraf cl--white mb-5">
-                <p>ENDOCOUNTRY es una empresa dedicada a prestar servicios en gastroenterología clínica y quirúrgica, cuenta con especialistas en endoscopia digestiva y terapéutica. Cirujanos gastrointestinales con una amplia experiencia en cirugía laparoscopia y oncológica. Su experiencia y condiciones humanas redundan en la calidad del servicio.</p><br>
-                <p>Contamos con tecnología de punta en lo relacionado con equipos para la realización de estudios de endoscopia alta y baja, estudios de fisiología gastrointestinal, estudio y manejo de la obesidad. La monitorización permanente de los pacientes permite la aplicación segura de medicamentos sedantes, lo cual facilita la realización de los procedimientos.</p>
-              </div>
+      <section class="box_intro--about" data-aos="fade-up" data-aos-duration="3000">
+        <div class="row">
+          <div class="col-12 col-md-7 bgi_about--deco cl--white ml-auto pd_box--x50 box_shadow">
+            <div class="title cl--white mb-5">
+              <h3 class="txt_size--em5 txt_bold">Nuestra empresa</h3>
+            </div>
+            <div class="paragraf cl--white mb-5">
+              <p>ENDOCOUNTRY es una empresa dedicada a prestar servicios en gastroenterología clínica y quirúrgica, cuenta con especialistas en endoscopia digestiva y terapéutica. Cirujanos gastrointestinales con una amplia experiencia en cirugía laparoscopia y oncológica. Su experiencia y condiciones humanas redundan en la calidad del servicio.</p><br>
+              <p>Contamos con tecnología de punta en lo relacionado con equipos para la realización de estudios de endoscopia alta y baja, estudios de fisiología gastrointestinal, estudio y manejo de la obesidad. La monitorización permanente de los pacientes permite la aplicación segura de medicamentos sedantes, lo cual facilita la realización de los procedimientos.</p>
             </div>
           </div>
         </div>
@@ -92,14 +94,14 @@
         <div class="container">
           <div class="row">
             <div class="col txt_center">
-              <div class="box_icon d-block mb-5"><i class="icon icon_especialist"></i></div>
-              <div class="title cl--lightBlue txt_bold my-5">
+              <div class="box_icon d-block mb-5" data-aos="fade-up" data-aos-duration="3000"><i class="icon icon_especialist"></i></div>
+              <div class="title cl--lightBlue txt_bold my-5" data-aos="fade-up" data-aos-duration="3000">
                 <h2 class="txt_size--em4">Nuestros especialistas</h2>
               </div>
             </div>
           </div>
           <div class="row">
-            <div class="col-12 col-md-4 pd_box--x20">
+            <div class="col-12 col-md-4 pd_box--x20" data-aos="fade-up" data-aos-duration="3000">
               <div class="title cl--gray mb-5">
                 <h4>Andrés Muñoz Mora</h4>
               </div>
@@ -107,7 +109,7 @@
                 <p>Universidad Javeriana</p>
               </div>
             </div>
-            <div class="col-12 col-md-4 pd_box--x20">
+            <div class="col-12 col-md-4 pd_box--x20" data-aos="fade-up" data-aos-duration="3000">
               <div class="title cl--gray mb-5">
                 <h4>Paulo Archila</h4>
               </div>
@@ -115,7 +117,7 @@
                 <p>Fondo. Universitaria Ciencias de la Salud del Hospital San Jose</p>
               </div>
             </div>
-            <div class="col-12 col-md-4 pd_box--x20">
+            <div class="col-12 col-md-4 pd_box--x20" data-aos="fade-up" data-aos-duration="3000">
               <div class="title cl--gray mb-5">
                 <h4>Diego Francisco de la Torre Cifuentes</h4>
               </div>
@@ -130,7 +132,7 @@
       <section>
         <ul class="list--inline list_equal cl--white">
           <li class="bgc--lightBlue">
-            <div class="box box_equal--country">
+            <div class="box box_equal--country" data-aos="fade-right" data-aos-duration="3000">
               <div class="title mb-5">
                 <h2>Misión</h2>
               </div>
@@ -140,7 +142,7 @@
             </div>
           </li>
           <li class="bgc--blue">
-            <div class="box box_equal--country">
+            <div class="box box_equal--country" data-aos="fade-left" data-aos-duration="3000">
               <div class="title mb-5">
                 <h2>Visión</h2>
               </div>
@@ -154,13 +156,13 @@
       <!--Section-->
       <section>
         <ul class="nav nav-tabs nav_tabs--about" id="myTab" role="tablist">
-          <li class="nav-item"><a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Nuestros valores</a></li>
-          <li class="nav-item"><a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Nuestros principios</a></li>
-          <li class="nav-item"><a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Objetivo corporativo</a></li>
+          <li class="nav-item" data-aos="fade-down" data-aos-duration="3000"><a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Nuestros valores</a></li>
+          <li class="nav-item" data-aos="fade-down" data-aos-duration="3000"><a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Nuestros principios</a></li>
+          <li class="nav-item" data-aos="fade-down" data-aos-duration="3000"><a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Objetivo corporativo</a></li>
         </ul>
         <div class="tab-content tab_content--about" id="myTabContent">
           <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-            <div class="container">
+            <div class="container" data-aos="fade-up" data-aos-duration="3000">
               <div class="row">
                 <div class="col txt_center cl--gray"><b class="txt_bold">Valores</b>
                   <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
@@ -169,7 +171,7 @@
             </div>
           </div>
           <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-            <div class="container">
+            <div class="container" data-aos="fade-up" data-aos-duration="3000">
               <div class="row">
                 <div class="col txt_center cl--gray"><b class="txt_bold">Principios</b>
                   <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
@@ -178,7 +180,7 @@
             </div>
           </div>
           <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-            <div class="container">
+            <div class="container" data-aos="fade-up" data-aos-duration="3000">
               <div class="row">
                 <div class="col txt_center cl--gray"><b class="txt_bold">Corporativo</b>
                   <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>

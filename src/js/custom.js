@@ -24,18 +24,18 @@ $(document).ready(function($){
         slidesToScroll: 1,
         arrows: false,
         fade: true,
-        //autoplay: true,
-        //autoplaySpeed: 4000,
-        //asNavFor: '.slider-nav'
+        autoplay: true,
+        autoplaySpeed: 4000
     });
     $('.slider_intro--about').slick({
+        dots: true,
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
         fade: true,
-        //autoplay: true,
-        //autoplaySpeed: 4000,
-        //asNavFor: '.slider-nav'
+        autoplay: true,
+        autoplaySpeed: 500
+
     });
     $('.slider-nav').slick({
         slidesToShow: 3,
@@ -134,73 +134,34 @@ $(document).ready(function($){
     $(document).on("scroll", function(){
         if
         ($(document).scrollTop() > 50){
-            $("#header").addClass("");//navbar_onscroll
+            $("#header").addClass("navbar_onscroll");
+            $("#header").addClass("fixed-top");
         }
         else
         {
-            $("#header").removeClass("");//navbar_onscroll
+            $("#header").removeClass("navbar_onscroll");
+            $("#header").removeClass("fixed-top");
         }
     });
     $(document).on("scroll", function(){
         if
         ($(document).scrollTop() > 50){
-            $("#logo").addClass("logo_cobox--color");
+            $("#logo").addClass("logo_size");
         }
         else
         {
-            $("#logo").removeClass("logo_cobox--color");
+            $("#logo").removeClass("logo_size");
         }
-    });
-    // Calculadora
-    $('#calculate').click(function(e) {
-        var weight = $('#weight').val();
-        var declared = $('#declared').val();
-        var total = 0;
-        var percentage = 0;
-        if(weight != undefined && weight != null && weight != "" &&
-            declared != undefined && declared != null && declared != "") {
-            if(weight > 0 && declared > 0) {
-                if(weight > 110) {
-                    //alert('el peso máximo permitido por guía no puede superar las 110 libras.');
-                    $(".weight + .error").addClass("i");
-                    $("#weight").focus();
-                    $(".realvalue + .alerta").removeClass("i");
-                    $(".diligence + .alerta").removeClass("a");
-                }else{
-                    weight < 7 ? weight = 7 : weight = weight;
-                    declared < 30 ? declared = 30 : declared = declared;
-                    declared <=200 ? percentage = 0.14 : percentage = 0.30;
-                    total = ( (weight*1.70) + (declared*percentage) + 5 );
-                    total = (Math.round(total*100)/100).toFixed(1);
-                    $('#total').text('$'+total);
-                }
-            }else{
-                //alert('Los valores deben ser superiores a 0');
-                $(".realvalue + .alerta").addClass("i");
-                $(".diligence + .alerta").removeClass("a");
-                $(".weight + .error").removeClass("i");
-            }
-        }else{
-            //alert('Diligenciar los campos');
-            $(".diligence + .alerta").addClass("a");
-            $(".weight + .error").removeClass("i");
-            $(".realvalue + .alerta").removeClass("i");
-        }
-    });
-    //Expaden Checked true
-    $('#expanded').change(function() {
-        $('#checkboxdiv').toggle();
     });
     // Validacion FF
     $('#submit').click(function(){
         var name        = $("#name").val();
         var email       = $("#email").val();
         var validacion_email = /^[a-zA-Z0-9_\.\-]+@[a-zA-Z0-9\-]+\.[a-zA-Z0-9\-\.]+$/;
-        var phone       = $("#phone").val();
-        var city       = $("#city").val();
+        var asunto     = $("#asunto").val();
         var message    = $("#message").val();
 
-        if(name == "" || email == "" || phone == "" || city == "" || message == "" ){
+        if(name == "" || email == "" || asunto == "" || message == "" ){
             if(name == ""){
                 $(".name + .error").addClass("i");
                 $("#name").focus();
@@ -215,19 +176,12 @@ $(document).ready(function($){
             }else{
                 $(".email + .error").removeClass("i");
             }
-            if(phone == ""){
-                $(".cel + .error").addClass("i");
-                $("#phone").focus();
+            if(asunto == ""){
+                $(".asunto + .error").addClass("i");
+                $("#asunto").focus();
                 return false;
             }else{
-                $(".cel + .error").removeClass("i");
-            }
-            if(city == ""){
-                $(".city + .error").addClass("i");
-                $("#city").focus();
-                return false;
-            }else{
-                $(".city + .error").removeClass("i");
+                $(".asunto + .error").removeClass("i");
             }
             if(message == ""){
                 $(".message + .error").addClass("i");
@@ -240,8 +194,7 @@ $(document).ready(function($){
             $(".message + .error").removeClass("i");
             var datos = '&name=' + name +
                 '&email=' + email +
-                '&phone=' + phone +
-                '&city=' + city+
+                '&asunto=' + asunto +
                 '&message=' + message;
             $.ajax({
                 method:"Post",
@@ -254,8 +207,7 @@ $(document).ready(function($){
                     $('.alerta p').html('Muchas Gracias por contáctarnos, pronto nos estaremos comunicando contigo.');
                     $('#name').val("");
                     $('#email').val("");
-                    $('#phone').val("");
-                    $('#city').val("");
+                    $('#asunto').val("");
                     $('#message').val("");
                 }else{
                     $('.alerta p').fadeIn("slow");

@@ -1,45 +1,46 @@
 extends ./base/layout.pug
 
 block content
-  include _header.pug
   .wrapper
     section.position-relative.slider_overflow
       ul.slider_intro--about
-        li.slider_item.slider_item--bgi(style="background-image: url('images/slider_about/img-001.jpg')")
+        li.slider_item.slider_item--bgi.item--01
+        li.slider_item.slider_item--bgi.item--02
+        li.slider_item.slider_item--bgi.item--03
+        li.slider_item.slider_item--bgi.item--04
     //Tres items Intro
-    section.box_intro--about
-      .container
-        .row
-          .col-12.col-md-6.bgc--steeblue.cl--white.ml-auto.pd_box--x50.box_shadow
-            .title.cl--white.mb-5
-              h3.txt_size--em5.txt_bold Nuestra empresa
-            .paragraf.cl--white.mb-5
-              p ENDOCOUNTRY es una empresa dedicada a prestar servicios en gastroenterología clínica y quirúrgica, cuenta con especialistas en endoscopia digestiva y terapéutica. Cirujanos gastrointestinales con una amplia experiencia en cirugía laparoscopia y oncológica. Su experiencia y condiciones humanas redundan en la calidad del servicio.
-              br
-              p Contamos con tecnología de punta en lo relacionado con equipos para la realización de estudios de endoscopia alta y baja, estudios de fisiología gastrointestinal, estudio y manejo de la obesidad. La monitorización permanente de los pacientes permite la aplicación segura de medicamentos sedantes, lo cual facilita la realización de los procedimientos.
+    section.box_intro--about(data-aos="fade-up", data-aos-duration="3000")
+      .row
+        .col-12.col-md-7.bgi_about--deco.cl--white.ml-auto.pd_box--x50.box_shadow
+          .title.cl--white.mb-5
+            h3.txt_size--em5.txt_bold Nuestra empresa
+          .paragraf.cl--white.mb-5
+            p ENDOCOUNTRY es una empresa dedicada a prestar servicios en gastroenterología clínica y quirúrgica, cuenta con especialistas en endoscopia digestiva y terapéutica. Cirujanos gastrointestinales con una amplia experiencia en cirugía laparoscopia y oncológica. Su experiencia y condiciones humanas redundan en la calidad del servicio.
+            br
+            p Contamos con tecnología de punta en lo relacionado con equipos para la realización de estudios de endoscopia alta y baja, estudios de fisiología gastrointestinal, estudio y manejo de la obesidad. La monitorización permanente de los pacientes permite la aplicación segura de medicamentos sedantes, lo cual facilita la realización de los procedimientos.
     // Service Items
     section.py-5
       .container
         .row
           .col.txt_center
-            .box_icon.d-block.mb-5
+            .box_icon.d-block.mb-5(data-aos="fade-up", data-aos-duration="3000")
               i.icon.icon_especialist
-            .title.cl--lightBlue.txt_bold.my-5
+            .title.cl--lightBlue.txt_bold.my-5(data-aos="fade-up", data-aos-duration="3000")
               h2.txt_size--em4 Nuestros especialistas
         .row
-          .col-12.col-md-4.pd_box--x20
+          .col-12.col-md-4.pd_box--x20(data-aos="fade-up", data-aos-duration="3000")
             .title.cl--gray.mb-5
               h4 Andrés Muñoz Mora
             .paragraf.cl--gray.mb-5
               b Cirujano, gastrointestinal, gastroenterologo, endoscopista.
               p Universidad Javeriana
-          .col-12.col-md-4.pd_box--x20
+          .col-12.col-md-4.pd_box--x20(data-aos="fade-up", data-aos-duration="3000")
             .title.cl--gray.mb-5
               h4 Paulo Archila
             .paragraf.cl--gray.mb-5
               b Gastroenterologo, endoscopista.
               p Fondo. Universitaria Ciencias de la Salud del Hospital San Jose
-          .col-12.col-md-4.pd_box--x20
+          .col-12.col-md-4.pd_box--x20(data-aos="fade-up", data-aos-duration="3000")
             .title.cl--gray.mb-5
               h4 Diego Francisco de la Torre Cifuentes
             .paragraf.cl--gray.mb-5
@@ -49,13 +50,13 @@ block content
     section
       ul.list--inline.list_equal.cl--white
         li.bgc--lightBlue
-          .box.box_equal--country
+          .box.box_equal--country(data-aos="fade-right", data-aos-duration="3000")
             .title.mb-5
               h2 Misión
             .paragraf
               p Somos un equipo de profesionales calificados y comprometidos con la atención cálida y segura, quienes apoyados en tecnología de punta, brindamos servicios especializados para el manejo de pacientes con enfermedades del sistema gastrointestinal, a través de procesos eficientes y basados en las mejores prácticas.
         li.bgc--blue
-          .box.box_equal--country
+          .box.box_equal--country(data-aos="fade-left", data-aos-duration="3000")
             .title.mb-5
               h2 Visión
             .paragraf
@@ -63,29 +64,28 @@ block content
     //Section
     section
       ul#myTab.nav.nav-tabs.nav_tabs--about(role='tablist')
-        li.nav-item
+        li.nav-item(data-aos="fade-down", data-aos-duration="3000")
           a#home-tab.nav-link.active(data-toggle='tab' href='#home' role='tab' aria-controls='home' aria-selected='true') Nuestros valores
-        li.nav-item
+        li.nav-item(data-aos="fade-down", data-aos-duration="3000")
           a#profile-tab.nav-link(data-toggle='tab' href='#profile' role='tab' aria-controls='profile' aria-selected='false') Nuestros principios
-        li.nav-item
+        li.nav-item(data-aos="fade-down", data-aos-duration="3000")
           a#contact-tab.nav-link(data-toggle='tab' href='#contact' role='tab' aria-controls='contact' aria-selected='false') Objetivo corporativo
       #myTabContent.tab-content.tab_content--about
         #home.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='home-tab')
-          .container
+          .container(data-aos="fade-up", data-aos-duration="3000")
             .row
               .col.txt_center.cl--gray
                 b.txt_bold Valores
                 p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
         #profile.tab-pane.fade(role='tabpanel' aria-labelledby='profile-tab')
-          .container
+          .container(data-aos="fade-up", data-aos-duration="3000")
             .row
               .col.txt_center.cl--gray
                 b.txt_bold Principios
                 p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
         #contact.tab-pane.fade(role='tabpanel' aria-labelledby='contact-tab')
-          .container
+          .container(data-aos="fade-up", data-aos-duration="3000")
             .row
               .col.txt_center.cl--gray
                 b.txt_bold Corporativo
                 p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
-  include _footer.pug

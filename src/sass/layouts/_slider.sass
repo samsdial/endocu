@@ -8,7 +8,7 @@
     overflow: hidden
   &_item
     &--bgi
-      background-position: center center
+      background-position: center -100px
       background-size: cover
       background-repeat: no-repeat
 //ajustes slider General
@@ -17,7 +17,48 @@
   &_intro--about
     li.slider_item
       height: 80vh
-  &_intro--about,
+      background-attachment: fixed
+      background-position: center 45px
+      background-size: cover
+      background-repeat: no-repeat
+      &.item--01
+        background-image: url('#{$gitPath}slider_about/img-001.jpg')
+      &.item--02
+        background-image: url('#{$gitPath}slider_about/img-002.jpg')
+      &.item--03
+        background-image: url('#{$gitPath}slider_about/img-003.jpg')
+      &.item--04
+        background-image: url('#{$gitPath}slider_about/img-004.jpg')
+    .slick-dots
+      //bottom: 150px
+      //left: 150px
+      text-align: center
+      position: relative
+      bottom: inherit
+      width: 100%
+      z-index: 300
+      top: -300px
+      +MQ(M)
+        text-align: left
+        padding: 5px 260px
+        top: 0
+      li
+        display: inline-block
+        button
+          &:before
+            color: transparent
+            background-color: rgba($blue, .3)
+            border: none
+            border-radius: 50%
+            width: 12px
+            height: 12px
+            opacity: 1
+        &.slick-active
+          button
+            &:before
+              background-color: $blue
+              color: transparent
+              opacity: 1
   &_intro
     .slick-dots
       bottom: 150px

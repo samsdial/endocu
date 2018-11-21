@@ -58,9 +58,10 @@ html(lang="es")
             script(src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js")
             <![endif]-->
     body(style="position: relative;")
-        //- include ./_includes/_header.pug
+        //include _header.pug
+        include _header--git.pug
         block content
-        //- include ./_includes/_footer.pug
+        include _footer.pug
         block bottom-script
             script(src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js")
             script(src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js")

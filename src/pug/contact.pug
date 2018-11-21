@@ -1,29 +1,28 @@
 extends ./base/layout.pug
 
 block content
-    include _header.pug
     .wrapper
         section
             .row
-                .col-12.col-sm-6.col-md-4.bgc--blue.cl--white
+                .col-12.col-sm-6.col-md-5.bgi.bgi_contact--deco.cl--white
                     .box_contact--blue
-                        .row.pd_box--x50
-                            .col.col-12.aling-selft-start
+                        .row
+                            .col.col-12.aling-selft-start(data-aos="fade-right", data-aos-duration="3000")
                                 .title.mb-3
-                                    h2 Contacto
+                                    h2.txt_size--em4 Contacto
                                 .info
                                     p.mb-3 Teléfonos: 5301349 - 8051526
                                     p.mb-3 Cra 16 No. 82- 57 Piso 6 Unidad Endoscopia
                                     p.mb-3 contacto@endocountry.com
-                            .col.col-12.aling-selft-end
+                            .col.col-12.aling-selft-end(data-aos="fade-right", data-aos-duration="3000")
                                 .subtitle.mb-3
                                     h4 Horario
                                 .paragraf
-                                    p.mb-2 lunes
-                                    p.mb-2 Sábados
+                                    p.mb-2 Lunes a Viernes  7:00am - 5:00 pm
+                                    p.mb-2 Sabados  7:00am - 12:00 pm
 
-                .col-12.col-sm-6.col-md-8.bgc--white.txt_center.pd_box--x50
-                    .txt_left(data-aos="fade-up", data-aos-duration="3000")
+                .col-12.col-sm-6.col-md-7.bgc--white.txt_center.pd_box--x50
+                    .box_form.txt_left(data-aos="fade-up", data-aos-duration="3000")
                         .title.mb-4.cl--gray.mb-5
                             h3 Envíanos un mensaje
                         form.form-horizontal
@@ -33,47 +32,39 @@ block content
                                         input#name.form-control.name(type="text", placeholder="Nombre")
                                         .error
                                 .row
-                                    .col.mb-5
+                                    .col-12.col-lg-6.mb-5
                                         input#email.form-control.email(type="text", placeholder="Correo Electrónico")
                                         .error
-                                    .col.mb-5
-                                        input#subject.form-control.city(type="text", placeholder="Asunto")
+                                    .col-12.col-lg-6.mb-5
+                                        input#asunto.form-control.asunto(type="text", placeholder="Asunto")
                                         .error
                                 .row
                                     .col-12.mb-5
                                         textarea#message.form-control.message(placeholder="Mensaje", rows="4", cols="50")
                                         .error
                             .form-group
-                                .col
-                                    button#submita.btn.btn_site--blue.cl--white.btn-sm.btn_full--lg Enviar
+                                .w100
+                                    button#submit.btn.btn_site--blue.cl--white.btn-sm.btn_full--lg Enviar
                                     .alerta
                                         p
-        section.pd_top--x25.pd_bottom--x100
-                    .col-12.col-sm-7.mx-auto.pd_top--x50.pd_bottom--x100
-                        .txt_center.mb-5(data-aos="zoom-in", data-aos-duration="3000")
-                            .icon.icon_contacto
-                        .txt_center(data-aos="fade-up", data-aos-duration="3000")
-                            .subtitle.mb-5
-                                .txt_size--em3.cl--gray.mb-2 También puedes escribirnos al
-                                h4.cl--gray +1 305 333 0477
-                            .action
-                                a.btn.btn_site_grad--blue.btn--shadow.cl--white.btn-sm.btn_radio.btn_full--lg(href="/7/doc/contacto.html") Contacto
-                    .container
-                        .row
-                            .col.txt_center
-                                .title.mb-5(data-aos="fade-up", data-aos-duration="3000")
-                                    h4.cl--gray Oficina en MIAMI
-                                .subtitle(data-aos="fade-up", data-aos-duration="3000")
-                                    p 8086 NW 74th Ave.|Miami, FL 33166
-                                    p Ph: 305-887-4232 | Fax: 305-887-4236
-                                .info(data-aos="fade-up", data-aos-duration="3000")
-                                    | iframe
-                            .col.txt_center
-                                .title.mb-5(data-aos="fade-up", data-aos-duration="3000")
-                                    h4.cl--gray Oficina en BOGOTÁ
-                                .subtitle(data-aos="fade-up", data-aos-duration="3000")
-                                    p Calle  22D  #127-84 Bodega 8
-                                    p Centro Empresarial El Dorado | Tel: (1) 489-9113
-                                .info(data-aos="fade-up", data-aos-duration="3000")
-                                    | iframe
-    include _footer.pug
+        section.pd_top--x100.pd_bottom--x100
+            .container
+                .row
+                    .col-12
+                        .box_item--form
+                            form(action='http://maps.google.com/maps' method='get' target='_blank')
+                                ul.list--equal(data-aos="fade-up", data-aos-duration="3000")
+                                    li.txt_center
+                                        .title.cl--blue
+                                            h2 Cómo llegar
+                                    li.w50
+                                        input.form-control.name(type='text' name='saddr' placeholder='Ingrese su direccion')
+                                        input(type='hidden' name='daddr' value='Cra 16 No. 82 57 Clinica del Country, Bogotá, Colombia')
+                                    li.wauto
+                                        button.btn.btn_next(type='submit' value='Get directions')
+                                            i.icon.icon_next
+        section.pd_top--x10.pd_bottom--x100(data-aos="fade-up", data-aos-duration="3000")
+            .container
+                .row
+                    .col-12
+                        iframe.w-100.iframe_map(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62967.15818868471!2d-74.09138627099587!3d4.668989083556377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9af45318af65%3A0x558fc434eeb9eafc!2sCl%C3%ADnica+del+Country!5e0!3m2!1ses!2sco!4v1542771001873' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')

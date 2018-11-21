@@ -1,5 +1,25 @@
 // list.sass
 .list
+    &--equal
+        list-style: none
+        display: block
+        width: 100%
+        @media (min-width: 771px)
+            display: table
+            width: 100%
+        &>li
+            display: block
+            vertical-align: middle
+            margin-bottom: 15px
+            @media (min-width: 771px)
+                display: table-cell
+                vertical-align: middle
+            &.w50
+                width: 100%
+                @media (min-width: 771px)
+                    width: 60%
+            &:last-child
+                text-align: center
     &--inline
         padding-right: 0px
         padding-left: 0px

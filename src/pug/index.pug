@@ -1,13 +1,60 @@
 extends ./base/layout.pug
 
 block content
-    include _header.pug
     .wrapper
         section.position-relative.slider_overflow
             ul.slider_intro
                 li.slider_item.slider_item--bgi(style="background-image: url('images/slider_home/img-001.jpg')")
                     .container
-                        .row.align-items-sm-center
+                        .row.align-items-center
+                            .col-12.col-md-6.cl--white.text-center.text-sm-right.text-md-left
+                                .title.mb-2(data-aos="fade-up", data-aos-duration="3000")
+                                    .txt_two.display-2.txt_semisemibold Gastroenterología y endoscopia
+                                .intro.mb-5(data-aos="fade-up", data-aos-duration="3000")
+                                    .txt_size--em2
+                                        span.txt_bold Pensando en su bienestar, ofrecemos atención de alta calidad, responsable y con compromiso ético y humano.
+                                .action.mb-2(data-aos="fade-up", data-aos-duration="3000")
+                                    ul.list--inline.list_two_item
+                                        li
+                                            a.btn.btn_site--white.cl--blue.btn-sm.btn_full--lg(href='#')
+                                                i.fa
+                                                | Saber Más
+                            .col-12.col-md-6
+                li.slider_item.slider_item--bgi(style="background-image: url('images/slider_home/img-002.jpg')")
+                    .container
+                        .row.align-items-center
+                            .col-12.col-md-6.cl--white.text-center.text-sm-right.text-md-left
+                                .title.mb-2
+                                    .txt_two.display-2.txt_semisemibold Gastroenterología y endoscopia
+                                .intro.mb-5
+                                    .txt_size--em2
+                                        span.txt_bold Pensando en su bienestar, ofrecemos atención de alta calidad, responsable y con compromiso ético y humano.
+                                .action.mb-2
+                                    ul.list--inline.list_two_item
+                                        li
+                                            a.btn.btn_site--white.cl--blue.btn-sm.btn_full--lg(href='#')
+                                                i.fa
+                                                | Saber Más
+                            .col-12.col-md-6
+                li.slider_item.slider_item--bgi(style="background-image: url('images/slider_home/img-003.jpg')")
+                    .container
+                        .row.align-items-center
+                            .col-12.col-md-6.cl--white.text-center.text-sm-right.text-md-left
+                                .title.mb-2
+                                    .txt_two.display-2.txt_semisemibold Gastroenterología y endoscopia
+                                .intro.mb-5
+                                    .txt_size--em2
+                                        span.txt_bold Pensando en su bienestar, ofrecemos atención de alta calidad, responsable y con compromiso ético y humano.
+                                .action.mb-2
+                                    ul.list--inline.list_two_item
+                                        li
+                                            a.btn.btn_site--white.cl--blue.btn-sm.btn_full--lg(href='#')
+                                                i.fa
+                                                | Saber Más
+                            .col-12.col-md-6
+                li.slider_item.slider_item--bgi(style="background-image: url('images/slider_home/img-004.jpg')")
+                    .container
+                        .row.align-items-center
                             .col-12.col-md-6.cl--white.text-center.text-sm-right.text-md-left
                                 .title.mb-2
                                     .txt_two.display-2.txt_semisemibold Gastroenterología y endoscopia
@@ -25,14 +72,14 @@ block content
         section.box--intro
             .container
                 .row.box_shadow
-                    .col-12.col-md-4.bgc--steeblue.cl--white.pd_box--x50
+                    .col-12.col-md-4.bgc--steeblue.cl--white.pd_box--x50(data-aos="fade-up", data-aos-duration="3000")
                         .box_icon.d-block.mb-5
                             i.icon.icon_tecnologia--white
                         .title.cl--white.mb-5
                             h3 Tecnologia
                         .paragraf.cl--white.mb-5
                             p Equipos con tecnología de punta son nuestros instrumentos para ofrecer el mejor servicio.
-                    .col-12.col-md-4.bgc--lightBlue.cl--white.pd_box--x50
+                    .col-12.col-md-4.bgc--lightBlue.cl--white.pd_box--x50(data-aos="fade-up", data-aos-duration="3000")
                         .box_icon.d-block.mb-5
                             i.icon.icon_especialist--white
                         .title.cl--white.mb-5
@@ -41,7 +88,7 @@ block content
                             p Contamos con los mejores especialistas quienes brindan una atención humana y ética.
                         .action
                             a.btn_link--underline
-                    .col-12.col-md-4.bgc--blue.cl--white.pd_box--x50
+                    .col-12.col-md-4.bgc--blue.cl--white.pd_box--x50(data-aos="fade-up", data-aos-duration="3000")
                         .title.cl--white.mb-5
                             h3 Horario de atención
                         .paragraf.cl--white.mb-5
@@ -60,17 +107,17 @@ block content
             .container
                 .row
                     .col
-                        .title.cl--blue.txt_center.txt_bold.my-5
+                        .title.cl--blue.txt_center.txt_bold.my-5(data-aos="fade-up", data-aos-duration="3000")
                             h2 Los servicios que prestamos
                 .row
-                    .col-12.col-md-6.pd_box_items--home
+                    .col-12.col-md-6.pd_box_items--home(data-aos="fade-up", data-aos-duration="3000")
                         .title.cl--gray.mb-5
                             h3 Endoscopia
                         .paragraf.cl--gray.mb-5
                             p Consiste en la introducción de una cámara o lente dentro de un tubo o endoscopio a través de un orificio natural.
                         .action.mb-5
                             a(href="#") Leer más
-                    .col-12.col-md-6.pd_box_items--home
+                    .col-12.col-md-6.pd_box_items--home(data-aos="fade-up", data-aos-duration="3000")
                         .title.cl--gray.mb-5
                             h3 Endoscopia
                         .paragraf.cl--gray.mb-5
@@ -84,9 +131,8 @@ block content
                 .row
                     .col.txt_center.cl--white
                         .title.mb-5
-                            h2.display-2.txt_semisemibold
+                            h2.display-2.txt_semisemibold(data-aos="fade-up", data-aos-duration="3000")
                                 | Ofrecemos seguridad <br>
                                 | y experiencia con calidez
-                        .action.mb-5
+                        .action.mb-5(data-aos="fade-up", data-aos-duration="3000")
                             a.btn.btn_site--white.cl--blue.btn-sm.btn_full--lg(href="#") Contacto
-    include _footer.pug

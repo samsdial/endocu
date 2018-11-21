@@ -1,7 +1,6 @@
 extends ./base/layout.pug
 
 block content
-    include _header_static.pug
     .wrapper
         section.pd_top--x100.pd_bottom--x100
             .container
@@ -19,4 +18,3 @@ block content
             .container.pd_bottom--x100.pd_top--x100
                 .col-12.mx-auto.bgc--white.box_shadow.txt_center.pd_box--x50(data-aos="flip-left", data-aos-duration="3000")
                     iframe.w-100.iframe_rastrear(src='https://app.imperiocargo.com/lockers/#/tracking' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
-    include _footer.pug

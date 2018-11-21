@@ -1,6 +1,8 @@
 //
 
 .iframe
+    &_map
+        min-height: 670px
     &_rastrear
         height: 150px
     &_login
@@ -172,10 +174,28 @@
             width: 100%
 // MOdulo endo home
 .box
+    &_form
+        padding-left: 25px
+        padding-right: 25px
+        padding-top: 25px
+        padding-bottom: 25px
+        width: 100%
+        +MQ(S)
+            padding-left: 50px
+            padding-top: 50px
+            padding-bottom: 50px
+            padding-right: 50px
+        +MQ(L)
+            padding-right: 150px
     &_contact
         &--blue
             .row
                 min-height: 64rem
+                padding: 50px 25px
+                +MQ(S)
+                    padding: 25px 25px
+                +MQ(M)
+                    padding: 100px 21px 100px 125px
                 .col:first-child
                     height: 46rem
                 .col:last-child
@@ -193,10 +213,10 @@
                 padding-left: 22rem
                 padding-right: 22rem
     &--intro
-        margin-top: -137px
+        margin-top: -237px
         margin-bottom: 100px
     &_intro--about
-        margin-top: -500px
+        margin-top: -325px
         margin-bottom: 100px
 .card-body
     width: 95%
