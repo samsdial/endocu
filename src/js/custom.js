@@ -34,7 +34,7 @@ $(document).ready(function($){
         arrows: false,
         fade: true,
         autoplay: true,
-        autoplaySpeed: 500
+        autoplaySpeed: 4000
 
     });
     $('.slider-nav').slick({
