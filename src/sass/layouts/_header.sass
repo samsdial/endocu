@@ -90,10 +90,19 @@ a.nav-link
 .navbar_onscroll .container-fluid .navbar-collapse ul.navbar-nav li.nav-item
     a.nav-link
         color: $gray
+        &:focus
+            color: $white
+            outline: 1px solid $lightCyan
+        +press
+            color: $white
 .navbar_onscroll .container #navbarRaster ul.navbar-nav li.nav-item,
 .navbar_onscroll .container-fluid #navbarRaster ul.navbar-nav li.nav-item
     a.btn-link
         color: $gray
+        &:focus
+            color: $white
+        +press
+            color: $white
         .circle--animation
             background-color: $gray
             &:after,
