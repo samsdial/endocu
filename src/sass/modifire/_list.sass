@@ -20,6 +20,21 @@
                     width: 60%
             &:last-child
                 text-align: center
+    &_simple
+        margin-left: 15px
+        //list-style-type: circle
+        &>li
+            position: relative
+            &:after
+                content: ""
+                background: $blue
+                width: 5px
+                height: 5px
+                position: absolute
+                border-radius: 50%
+                top: 8px
+                left: -12px
+            //list-style-type: circle
     &--inline
         padding-right: 0px
         padding-left: 0px

@@ -1,5 +1,6 @@
 extends ./base/layout.pug
-
+block vars
+    - var page = 'servicios'
 block content
     .wrapper
         section.pd_top--x100.pd_bottom--x100.bgi.bgi--services
@@ -22,6 +23,7 @@ block content
                             #collapse1.collapse.show(aria-labelledby='heading1' data-parent='#accordionExample')
                                 .card-body
                                     p.cl--gray Es muy sencillo! Te registras y automáticamente obtienes un espacio de almacenamiento gratuito e ilimitado en nuestro centro logístico de Miami. La dirección y el número de casillero que enviamos a tu correo serán los que utilices como dirección de envío de cualquier compra que hagas. Cuando tus compras lleguen nosotros procederemos a almacenarlas. Desde tu sesión de casillero podrás agrupar, declarar, asegurar y dar la orden de despacho de tu mercancía.
+                        //item 01
                         .card
                             #heading2.card-header.position-relative
                                 h5.mb-0
@@ -40,16 +42,14 @@ block content
                                     p.cl--gray Indicaciones específicas con respecto a consumo de medicamentos serán informados en el momento de programar su cita.
                                     br
                                     b.txt_bold.cl--gray Por favor descargue e imprima el consentimiento lealo y entreguelo firmado el día de su procedimiento.
-                                    .actionm.my-5
+                                    .action.my-5
                                         ul.list.list--inline.list_download.txt_upper
                                             li
                                                 a.btn_outline--blue(href="#", download="clinicadelcountry-colonoscopia-preparacion") PREPARACION
                                             li
-                                                a.btn_outline--blue(href="#", download="clinicadelcountry-colonoscopia-preparacion") preparación Travad
-                                            li
                                                 a.btn_outline--blue(href="#", download="clinicadelcountry-colonoscopia-preparacion") Consentimiento
                                             li
-                                                a.btn_outline--blue(href="#", download="clinicadelcountry-colonoscopia-preparacion") recomendaciones
+                                                a.btn_outline--blue(href="#", download="clinicadelcountry-colonoscopia-preparacion") Recomendaciones
                                     #subAccordion.accordion
                                         .subcard.position-relative
                                             #headingOne.subcard_header
@@ -57,20 +57,31 @@ block content
                                                     button.btn.btn_ghost(type='button' data-toggle='collapse' data-target='#collapseOne' aria-expanded='true' aria-controls='collapseOne')
                                                     .title.pl-3.py-4.py-3--darkgray
                                                         span.icon.icon_subacc
-                                                        span Indiaciones Diagnosticas
+                                                        span Indiaciones
                                             #collapseOne.collapse.show(aria-labelledby='headingOne' data-parent='#subAccordion')
                                                 .card-body
-                                                    p Pacientes con síntomas digestivos tales como cambios en el hábito intestinal, cambios en las caracterísiticas de la materia fecal, distensión o dolor abdominal, sangrado digestivo bajo (sangre sola o con la materia fecal). Pacientes con anemia crónica, deterioro de sus condiciones genereles y/o pérdida progresiva de peso Paciente con enfermedad previa para control y seguimiento Paciente con riesgo mayor para cáncer del colon y el recto
+                                                    h5.txt_bold ESOFAGO
+                                                    p Estudio del RGE,	Hernia Hiatal, Hipertensión portal, Estenosis esofágica ( disfagia, odinofagia), Acalasia, Esófago de Barrett, Sospecha de neoplasia, Tratamiento del cáncer temprano, Tratamiento de divertículos ( Zenker) Ingesta de tóxicos ( acido o alcalino), Dilatación esofágicas, Escleroterapia de varices, Extracción de cuerpo extraños, Polipectomía, Enfermedad acido péptica, Estudio del dolor retroesternal,	Enfermedades sistémicas que afectan el TGI superior
+                                                    br
+                                                    h5.txt_bold ESTOMAGO
+                                                    p Gastritis atrófica, Ulcera duodenal y duodenitis, Nauseas y vómitos persistentes, Sospecha de neoplasias, Seguimiento después de cirugías, Dispepsia que no responde al tratamiento medico > 45 años,Control de sangrado digestivo, Polipectomía, Tratamiento de la obesidad, Gastrostomía percutánea.
+                                                    br
+                                                    h5.txt_bold DUODENO
+                                                    p Sospecha de neoplasia, Polipectomía,Síndrome de mala absorción ( biopsias), Control de lesiones sangrado.
                                         .subcard.position-relative
                                             #headingTwo.subcard_header
                                                 h5.mb-0
                                                     button.btn.btn_ghost(type='button' data-toggle='collapse' data-target='#collapseTwo' aria-expanded='false' aria-controls='collapseTwo')
                                                     .title.pl-3.py-4.py-3--darkgray
                                                         span.icon.icon_subacc
-                                                        span Terapéuticas
+                                                        span Complicaciones
                                             #collapseTwo.collapse(aria-labelledby='headingTwo' data-parent='#subAccordion')
                                                 .card-body
-                                                    p Anim pariatur cliche reprehenderit,
+                                                    p La endoscopia digestiva alta es un procedimiento seguro, con una tasa de complicaciones por debajo del 2%; su incidencia aumenta cuando se realizan biopsias o maniobras terapéuticas. En una de cada 1.000 estudios. Las complicaciones mecánicas del procedimiento diagnostico son: la perforación esofágica y el daño de la dentadura. El sangrado secundario a la toma de biopsias casi siempre es autolimitado, en algunos casos se hace necesario el control con inyección de esclerosante bajo visión directa.
+                                                    br
+                                                    p Actualmente, con la técnica adecuada, es posible lograr la revisión completa del colon hasta la región cecal, en más del 90% de las exploraciones, logrando incluso la intubación del íleon distal si así se requiere, según las indicaciones de cada caso en particular. Existen una serie de situaciones que limitan estas posibilidades como la existencia de adherencias, por cirugías abdominal previa o por peridiverticulitis, mala preparación del colon, alteraciones anatómicas y la presencia de lesiones inflamatorias o neoplásicas que impiden la progresión instrumental.
+                                                    br
+                                                    p Radiología dudosa, Diarrea crónica de origen no determinado,Sangrado digestivo bajo, Hemorragia digestiva de origen oscuro, Screening y seguimiento del cáncer colorectal, Intraoperatoria, Dolor abdominal crónico.
                                         .subcard.position-relative
                                             #headingThree.subcard_header
                                                 h5.mb-0
@@ -80,8 +91,42 @@ block content
                                                         span Contraindicaciones
                                             #collapseThree.collapse(aria-labelledby='headingThree' data-parent='#subAccordion')
                                                 .card-body
-                                                    p Anim pariatur cliche reprehenderit,
+                                                    p Hoy día, básicamente, las contraindicaciones para la realización de una colonoscopia diagnostica dependerán de la experiencia del examinador, pero desde el punto de vista práctico y didáctico, podemos agruparlos en:
+                                                    br
+                                                    h5.txt_bold ABSOLUTOS
+                                                    ul.list_simple
+                                                        li
+                                                            p Peritonitis
+                                                        li
+                                                            p Perforación intestinal
+                                                        li
+                                                            p Colitis toxica
+                                                        li
+                                                            p Infarto agudo del miocardio reciente
+                                                        li
+                                                            p Tromboembolismo pulmonar reciente
+                                                        li
+                                                            p Diverticulitis aguda con signos sugestivos sépticos
+                                                    br
+                                                    h5.txt_bold.txt_upper Relativas
+                                                    ul.list_simple
+                                                        li
+                                                            p Diverticulitis aguda no complicada
+                                                        li
+                                                            p Ascitis o diálisis peritoneal
+                                                        li
+                                                            p Sangrado colonico masivo
+                                                        li
+                                                            p Estado sardio pulmonar inestable
+                                                        li
+                                                            p Cirugía intestinal reciente
+                                                        li
+                                                            p Poca aceptación / tolerancia sicológica al procedimiento por parte del paciente, Poca aceptación / tolerancia sicológica al procedimiento por parte del paciente
+                                                        li
+                                                            p Embarazo en segundo o tercer trimestre
 
+
+                        //item 02
                         .card
                             #heading3.card-header.position-relative
                                 h5.mb-0
@@ -91,9 +136,60 @@ block content
                                         span Colonoscopia
                             #collapse3.collapse(aria-labelledby='heading3' data-parent='#accordionExample')
                                 .card-body
-                                    p.cl--gray Es absolutamente seguro y sencillo, por esta razón el comercio electrónico ha venido creciendo y consolidándose a pasos agigantados. Si tienes alguna duda sobre la seguridad de una página, el método de pago o condiciones especiales escríbenos para que un asesor profesional te acompañe.
-
-
+                                    p.cl--gray La colonoscopia y rectosigmoidoscopia son procedimientos que han venido reemplazando las técnicas radiológicas con medio de contraste para el estudio del recto y colon. El desarrollo de los instrumentos y perfeccionamiento de la técnica han permitido que el concepto sobre la colonoscopia, de ser un procedimiento agresivo se haya convertido en un examen sofisticado, socialmente aceptado.
+                                    br
+                                    p Obviamente las características propias del colon y el hecho de ser una técnica invasiva requieren de experiencia para la realización del procedimiento.
+                                    br
+                                    b Por favor descargue e imprima el consentimiento lealo y entreguelo firmado el día de su procedimiento.
+                                    br
+                                    .action.my-5
+                                        ul.list.list--inline.list_download.txt_upper
+                                            li
+                                                a.btn_outline--blue(href="#") PREPARACION
+                                            li
+                                                a.btn_outline--blue(href="#") Preparación Travad
+                                            li
+                                                a.btn_outline--blue(href="#") Consentimiento
+                                            li
+                                                a.btn_outline--blue(href="#") Recomedaciones
+                                    #subAccordion2.accordion
+                                        .subcard.position-relative
+                                            #headingOne2.subcard_header
+                                                h5.mb-0
+                                                    button.btn.btn_ghost(type='button' data-toggle='collapse' data-target='#collapseOne2' aria-expanded='true' aria-controls='collapseOne')
+                                                    .title.pl-3.py-4.py-3--darkgray
+                                                        span.icon.icon_subacc
+                                                        span Indicaciones Diagnosticas
+                                            #collapseOne2.collapse.show(aria-labelledby='headingOne' data-parent='#subAccordion2')
+                                                .card-body
+                                                    p Pacientes con síntomas digestivos tales como cambios en el hábito intestinal, cambios en las caracterísiticas de la materia fecal, distensión o dolor abdominal, sangrado digestivo bajo (sangre sola o con la materia fecal). Pacientes con anemia crónica, deterioro de sus condiciones genereles y/o pérdida progresiva de peso Paciente con enfermedad previa para control y seguimiento Paciente con riesgo mayor para cáncer del colon y el recto
+                                        .subcard.position-relative
+                                            #headingTwo2.subcard_header
+                                                h5.mb-0
+                                                    button.btn.btn_ghost(type='button' data-toggle='collapse' data-target='#collapseTwo2' aria-expanded='false' aria-controls='collapseTwo')
+                                                    .title.pl-3.py-4.py-3--darkgray
+                                                        span.icon.icon_subacc
+                                                        span Terapeuticas
+                                            #collapseTwo2.collapse(aria-labelledby='headingTwo' data-parent='#subAccordion2')
+                                                .card-body
+                                                    p Dilataciones o colocación de stents por estrecheses Control de sangrado producido en el colon Resección de pólipos o lesiones malignas o con potencial maligno superficiales Extracción cuerpos extraños
+                                        .subcard.position-relative
+                                            #headingThree2.subcard_header
+                                                h5.mb-0
+                                                    button.btn.btn_ghost(type='button' data-toggle='collapse' data-target='#collapseThree2' aria-expanded='false' aria-controls='collapseThree')
+                                                    .title.pl-3.py-4.py-3--darkgray
+                                                        span.icon.icon_subacc
+                                                        span Contradiciones
+                                            #collapseThree2.collapse(aria-labelledby='headingThree2' data-parent='#subAccordion2')
+                                                .card-body
+                                                    p Por lo general, la colonoscopia y la polipectomía son procedimientos seguros cuando son efectuados por médicos expertos capacitados en la realización del procedimiento.
+                                                    br
+                                                    p Una de las posibles complicaciones es la perforación o el desgarro de la pared intestinal, que pueden requerir cirugía. En el sitio de la biopsia y la polipectomía puede producirse sangrado, aunque generalmente éste es menor. El sangrado puede detenerse espontáneamente o puede ser controlado por medio del colonoscopia, y rara vez se requiere de seguimiento médico. Algunos pacientes pueden presentar una reacción a los sedantes, o bien experimentar complicaciones por enfermedades cardíacas o pulmonares.
+                                                    br
+                                                    p A pesar de que no es común que se presenten complicaciones después de una colonoscopia, es importante reconocer las señales tempranas de las mismas. Si usted advierte dolor abdominal severo, fiebre y escalofríos, o bien sangrado rectal, comuníquese con su médico.
+                                                    br
+                                                    p Si tiene dudas o interrogantes no olvide preguntarlos antes de iniciar su examen.
+                                                    br
 
                         //.card
                             #heading5.card-header.position-relative
@@ -116,6 +212,7 @@ block content
                                 .card-body
                                     p.cl--gray Esta es la lista de artículos prohibidos por la ley:
                                     small Lorem ipsum dolor sit amet consectetur adipiscing elit, mi vehicula scelerisque class praesent rhoncus, tempor commodo pretium proin congue hac. Nullam curabitur proin feugiat cursus posuere risus gravida montes, tellus ultricies orci maecenas molestie suscipit dapibus, mus fusce convallis nostra rutrum est sed. Vehicula et euismod pulvinar nascetur orci pharetra odio suscipit, nostra curabitur sed eleifend nulla felis nunc, ultricies tristique scelerisque arcu ut mollis tempor.
+                        //item 03
                         .card
                             #heading7.card-header.position-relative
                                 h5.mb-0
@@ -125,8 +222,86 @@ block content
                                         span Capsula Endoscopica
                             #collapse7.collapse(aria-labelledby='heading7' data-parent='#accordionExample')
                                 .card-body
-                                    p.cl--gray Lorem ipsum dolor sit amet consectetur adipiscing elit, mi vehicula scelerisque class praesent rhoncus, tempor commodo pretium proin congue hac. Nullam curabitur proin feugiat cursus posuere risus gravida montes, tellus ultricies orci maecenas molestie suscipit dapibus, mus fusce convallis nostra rutrum est sed. Vehicula et euismod pulvinar nascetur orci pharetra odio suscipit, nostra curabitur sed eleifend nulla felis nunc, ultricies tristique scelerisque arcu ut mollis tempor.
+                                    p.cl--gray La capsula endoscópica es un dispositivo de reducidas dimensiones que, a través de la ingestión oral, permite la obtención de imágenes del tubo digestivo durante su recorrido fisiológico a través de este. Su contribución fundamental se realiza en el estudio de las patologías del intestino delgado, segmento digestivo en el que aún existen dificultades de diagnóstico con las técnicas actuales, incluida la enteroscopia. El sistema completo consta de un dispositivo endoscópico en forma de cápsula, un videograbador que el paciente porta durante el tránsito intestinal de la cápsula y un ordenador externo para procesar las imágenes obtenidas.
+                                    br
+                                    b Por favor descargue e imprima el consentimiento lealo y entreguelo firmado el día de su procedimiento.
+                                    b Por favor descargue e imprima el formulario y completelo durante su procedimiento, entreguelo en la unidad de endoscopia.
+                                    .action.my-5
+                                        ul.list.list--inline.list_download.txt_upper
+                                            li
+                                                a.btn_outline--blue(href="#") PREPARACION
+                                            li
+                                                a.btn_outline--blue(href="#") Consentimiento
+                                            li
+                                                a.btn_outline--blue(href="#") Recomedaciones
 
+                                    #subAccordion7.accordion
+                                        .subcard.position-relative
+                                            #headingOne7.subcard_header
+                                                h5.mb-0
+                                                    button.btn.btn_ghost(type='button' data-toggle='collapse' data-target='#collapseOne7' aria-expanded='true' aria-controls='collapseOne7')
+                                                    .title.pl-3.py-4.py-3--darkgray
+                                                        span.icon.icon_subacc
+                                                        span Instrucciones para la realización del examen
+                                            #collapseOne7.collapse.show(aria-labelledby='headingOne7' data-parent='#subAccordion7')
+                                                .card-body
+                                                    p Su médico ha decidido que como parte de su evaluación médica sería conveniente someterse a una prueba denominada Capsulo-Endoscopia. Este procedimiento implica la ingestión de una pequeña Cápsula PillCam™ SB (del tamaño de una pastilla de vitaminas) que recorre de forma natural su aparato digestivo a la vez que va recogiendo imágenes del intestino. Las imágenes son transmitidas al SensorArray™ situado en su abdomen. Estos sensores están conectados al DataRecorder™, similar a un walkman, que almacena todas las imágenes. El DataRecorder se coloca en el RecorderBelt™ que se lleva en la cintura. Transcurridas 8 horas, se quitará el RecorderBelt y se lo entregará a su médico para que los datos sean procesados. La Cápsula PillCam SB es desechable y será excretada de forma natural por los movimientos intestinales. En el caso infrecuente de que no se excrete de forma natural, ésta deberá ser extraída mediante endoscopia o cirugía. Con el objetivo de obtener la información más precisa posible con este test, deberá seguir las siguientes recomendaciones:
+                                        .subcard.position-relative
+                                            #headingTwo7.subcard_header
+                                                h5.mb-0
+                                                    button.btn.btn_ghost(type='button' data-toggle='collapse' data-target='#collapseTwo7' aria-expanded='false' aria-controls='collapseTwo7')
+                                                    .title.pl-3.py-4.py-3--darkgray
+                                                        span.icon.icon_subacc
+                                                        span El día anterior a la Capsulo-endoscopia:
+                                            #collapseTwo7.collapse(aria-labelledby='headingTwo7' data-parent='#subAccordion7')
+                                                .card-body
+                                                    ol
+                                                        li
+                                                            p Llegue a la consulta de su médico a la hora fijada para la Capsulo-endoscopia vistiendo ropa holgada de dos piezas.
+                                                        li
+                                                            p En la consulta de su médico, tendrá una entrevista de pre-procedimiento. Durante esta entrevista deberá ser informado de que la capsulo-endoscopia conlleva un mínimo riesgo de sufrir obstrucción intestinal. Será entonces registrado y se le pedirá su consentimiento.
+                                                        li
+                                                            p Se le acoplará el SensorArray a su abdomen con parches adhesivos y será conectado al DataRecorder que llevará en un cinturón alrededor de la cintura. A continuación se le indicará que ingiera la Cápsula PillCam SB.
+                                        .subcard.position-relative
+                                            #headingThree7.subcard_header
+                                                h5.mb-0
+                                                    button.btn.btn_ghost(type='button' data-toggle='collapse' data-target='#collapseThree7' aria-expanded='false' aria-controls='collapseThree7')
+                                                    .title.pl-3.py-4.py-3--darkgray
+                                                        span.icon.icon_subacc
+                                                        span Tras la ingestión de la Cápsula PillCam SB
+                                            #collapseThree7.collapse(aria-labelledby='headingThree7' data-parent='#subAccordion7')
+                                                .card-body
+                                                    ol
+                                                        li
+                                                            p Tras la ingestión de la Cápsula PillCam SB, no coma o beba nada durante al menos 2 horas. Tras 4 horas puede tomar un pequeño tentempié. Una vez finalizado el examen puede volver a su dieta normal. Estas recomendaciones sobre la ingestión de alimentos se deben cumplir siempre, a no ser que su médico así lo indique. Contacte con su médico inmediatamente si sufre de dolor abdominal, nauseas o vómitos durante la Capsulo-endoscopia.
+                                                        li
+                                                            p Tas la ingestión de la cápsula PillCam SB y hasta el momento de su excreción, deberá mantenerse alejado de cualquier fuente de campos electromagnéticos fuertes, como los que producen los equipos de resonancia magnética o de radioaficionado.
+                                                        li
+                                                            p Ocasionalmente, algunas imágenes pueden perderse debido a interferencias de radio (es decir, de transmisores de radioaficionado, de dispositivos de resonancia magnética, etc.). En raras ocasiones esto puede conllevar la repetición de la capsulo-endoscopia. En dicho caso, aconseje al paciente de que se quede en la clínica durante el tiempo que dure el procedimiento para evitar que se repita el problema.
+                                                        li
+                                                            p La Capsulo-endoscopia dura aproximadamente 8 horas y se considera completada de acuerdo con las instrucciones de su médico. No desconecte el equipo o se quite el cinturón en ningún momento durante este periodo. Puesto que el DataRecorder es un pequeño ordenador, debe ser tratado con sumo cuidado y protección. Evite realizar movimientos bruscos o golpear el DataRecorder.
+                                                        li
+                                                            p Durante la Capsulo-endoscopia, deberá comprobar cada 15 minutos que la pequeña luz en la parte superior del DataRecorder parpadea dos veces por segundo. Si por cualquier motivo deja de parpadear a dicho ritmo, apunte la hora y contacte con su médico. Deberá también apuntar la hora y la naturaleza se cualquier suceso tales como, comer, beber, las actividades que realice y síntomas extraños. Devuelva el Formulario de Acontecimientos con estas notas a su médico en el momento en que devuelva el equipo.
+                                                        li
+                                                            p Evite cualquier actividad física extenuante especialmente si conlleva transpiración, y no se doble o agache durante la Capsulo-endoscopia.
+                                        .subcard.position-relative
+                                            #headingfour7.subcard_header
+                                                h5.mb-0
+                                                    button.btn.btn_ghost(type='button' data-toggle='collapse' data-target='#collapsefour7' aria-expanded='false' aria-controls='collapsefour7')
+                                                    .title.pl-3.py-4.py-3--darkgray
+                                                        span.icon.icon_subacc
+                                                        span Tras la finalización de la Capsulo-endoscopia
+                                            #collapsefour7.collapse(aria-labelledby='headingfour7' data-parent='#subAccordion7')
+                                                .card-body
+                                                    ol
+                                                        li
+                                                            p Su médico le indicará como devolver el equipo una vez finalizada la Capsulo-endoscopia. Si le ha sido indicado que se quite el equipo usted mismo, realice lo siguiente: (a) Desconecte el SensorArray del DataRecorder; (b) Quítese el RecorderBelt (con el DataRecorder y la Batería); (c) Desconecte la Batería del DataRecorder (d) Coloque el DataRecorder y la Batería en un lugar seguro. ¡Para quitarse el SensorArray de su abdomen, no tire de los cables del SensorArray! Despegue cada tira adhesiva tirando de la lengüeta no adhesiva y sin despegar el sensor de la tira adhesiva. Coloque el SensorArray con el resto del equipo.
+                                                        li
+                                                            p El DataRecorder almacena las imágenes de su examen. Entregue el DataRecorder, el RecorderBelt, el SensorArray y la Batería con cuidado. No los exponga a golpes, vibraciones o luz solar directa, pues pueden provocar pérdidas de información. Devuelva todo el equipo a la consulta de su médico lo antes posible.
+                                                        li
+                                                            p Si no puede asegurar haber excretado la Cápsula PillCam SB de su organismo, y desarrolla nauseas, dolor abdominal o vómitos sin motivo aparente tras el procedimiento, contacte con su médico para ser evaluado y para un posible examen de rayos X.
+                                                        li
+                                                            p La realización de un examen de resonancia magnética mientras la cápsula esté en su interior puede provocar un serio daño a su tracto intestinal o a su cavidad abdominal. Si no puede asegurar haber excretado la Cápsula PillCam SB de su organismo, deberá contactar con su médico para ser evaluado y para un posible examen de rayos X abdominal antes de someterse a una resonancia magnética.
                         .card
                             #heading8.card-header.position-relative
                                 h5.mb-0
@@ -135,8 +310,24 @@ block content
                                         span.icon.icon_acc
                                         span Balon Intragastrico
                             #collapse8.collapse(aria-labelledby='heading8' data-parent='#accordionExample')
-                                .card-body
-                                    p.cl--gray Lorem ipsum dolor sit amet consectetur adipiscing elit, mi vehicula scelerisque class praesent rhoncus, tempor commodo pretium proin congue hac. Nullam curabitur proin feugiat cursus posuere risus gravida montes, tellus ultricies orci maecenas molestie suscipit dapibus, mus fusce convallis nostra rutrum est sed. Vehicula et euismod pulvinar nascetur orci pharetra odio suscipit, nostra curabitur sed eleifend nulla felis nunc, ultricies tristique scelerisque arcu ut mollis tempor.
+                                .card-body.cl--gray
+                                    p Consiste en la colocación endoscópica, bajo sedación de una bolsa de silicona, la cual se llena de solución salina, produciendo un efecto restrictivo, disminuyendo la ingesta en los pacientes.
+                                    br
+                                    p El Balon Gastrico actualmente se considera el tratamiento no quirúrgico mas efectivo y de menos riesgo para la perdida de peso y la obesidad.
+                                    br
+                                    p El Balon Gastrico es de un material suave de silicona, el cual se introduce por endoscopia desinflado hasta el estómago, se llena con solución salina y produce un efecto de saciedad y llenura fácil con pequeñas cantidades de comida.
+                                    br
+                                    p El Balon Gastrico es un tratamiento que dura 6 meses, durante los cuales el paciente está acompañado de un Grupo Multidisciplinario de Especialistas que le ayudarán a perder peso.
+                                    br
+                                    p Por favor descargue e imprima el consentimiento lealo y entreguelo firmado el día de su procedimiento.
+                                    br
+                                    b Por favor descargue e imprima el consentimiento lealo y entreguelo firmado el día de su procedimiento.
+                                    .action.my-5
+                                        ul.list.list--inline.list_download.txt_upper
+                                            li
+                                                a.btn_outline--blue(href="#") Consentimiento
+                                            li
+                                                a.btn_outline--blue(href="#") Recomendaciones
 
                         .card
                             #heading9.card-header.position-relative

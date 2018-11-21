@@ -31,11 +31,56 @@ nav#header.navbar.navbar-expand-lg.pt-4.pb-4.top-bar.navbar-static-top.sps.sps--
         span#logo.logo_endoco
     #navbarCollapse1.collapse.navbar-collapse
       ul.navbar-nav.ml-2.text-center.text-lg-right.ml-auto
-        li.nav-item.active
-          a.nav-link(href='/') Inicio
         li.nav-item
-          a.nav-link(href='/nosotros.html') Nosotros
+          a.nav-link(class=(page === 'home') ? "active" : "", href='/') Inicio
         li.nav-item
-          a.nav-link(href='/servicios.html') Servicios
+          a.nav-link(class=(page === 'nosotros') ? "active" : "", href='/nosotros.html') Nosotros
         li.nav-item
-          a.nav-link(href='/contacto.html') Contacto
+          a.nav-link(class=(page === 'servicios') ? "active" : "", href='/servicios.html') Servicios
+        li.nav-item
+          a.nav-link(class=(page === 'contacto') ? "active" : "", href='/contacto.html') Contacto
+//SUBACCORDION
+  #subAccordion.accordion
+    .subcard.position-relative
+      #headingOne.subcard_header
+        h5.mb-0
+          button.btn.btn_ghost(type='button' data-toggle='collapse' data-target='#collapseOne' aria-expanded='true' aria-controls='collapseOne')
+          .title.pl-3.py-4.py-3--darkgray
+            span.icon.icon_subacc
+            span TITLE
+      #collapseOne.collapse.show(aria-labelledby='headingOne' data-parent='#subAccordion')
+        .card-body
+          h5.txt_bold SUBTITLE
+          p lorem
+    .subcard.position-relative
+      #headingTwo.subcard_header
+        h5.mb-0
+          button.btn.btn_ghost(type='button' data-toggle='collapse' data-target='#collapseTwo' aria-expanded='false' aria-controls='collapseTwo')
+          .title.pl-3.py-4.py-3--darkgray
+            span.icon.icon_subacc
+            span TITLE
+      #collapseTwo.collapse(aria-labelledby='headingTwo' data-parent='#subAccordion')
+        .card-body
+          p lorem
+    .subcard.position-relative
+      #headingThree.subcard_header
+        h5.mb-0
+          button.btn.btn_ghost(type='button' data-toggle='collapse' data-target='#collapseThree' aria-expanded='false' aria-controls='collapseThree')
+          .title.pl-3.py-4.py-3--darkgray
+            span.icon.icon_subacc
+            span TITLE
+      #collapseThree.collapse(aria-labelledby='headingThree' data-parent='#subAccordion')
+        .card-body
+          p lorem
+
+/// list
+  .action.my-5
+    ul.list.list--inline.list_download.txt_upper
+      li
+        a.btn_outline--blue(href="#") PREPARACION
+      li
+        a.btn_outline--blue(href="#") Preparación Travad
+      li
+        a.btn_outline--blue(href="#") Consentimiento
+      li
+        a.btn_outline--blue(href="#") Recomedaciones
