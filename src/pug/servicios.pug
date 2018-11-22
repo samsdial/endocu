@@ -1,7 +1,7 @@
 extends ./base/layout.pug
 block vars
     - var page = 'servicios'
-    - var title="Inicio ";
+    - var title="Servicios ";
     - var subtitle="Endocountry";
     - var description="Bienvenidos a endocountry,empresa dedicada a la prestación de servicios ambulatorios como endoscopia, colonoscopia, manometria, ph-metria, ecoendoscopia, enteroscopia entre otros.";
     - var abstract=''
@@ -18,9 +18,9 @@ block content
                     .title.cl--white.mb-5
                         .txt_bold.txt_size--em5 Servicios y procedimientos
 
-        section
+        section.pd_bottom--x100
             .container
-                .box_faq.w-75.mx-auto.bgc--white.box_shadow--gray(data-aos="fade-up", data-aos-duration="3000")
+                .box_faq.col-12.col-md-10.mx-auto.bgc--white.box_shadow--gray(data-aos="fade-up", data-aos-duration="3000")
                     #accordionExample.accordion
                         //.card
                             #heading1.card-header.position-relative
@@ -54,11 +54,14 @@ block content
                                     .action.my-5
                                         ul.list.list--inline.list_download.txt_upper
                                             li
-                                                a.btn_outline--blue(href="#", download="clinicadelcountry-colonoscopia-preparacion") PREPARACION
+                                                a.btn_outline--blue(target="_blank", href='/download/PREPARACION_PARA_ENCOSCOPIA_DIGESTIVA_ALTA.pdf')
+                                                    | PREPARACION
                                             li
-                                                a.btn_outline--blue(href="#", download="clinicadelcountry-colonoscopia-preparacion") Consentimiento
+                                                a.btn_outline--blue(target="_blank", href='/download/consentimiento-altas.pdf')
+                                                    | Consentimiento
                                             li
-                                                a.btn_outline--blue(href="#", download="clinicadelcountry-colonoscopia-preparacion") Recomendaciones
+                                                a.btn_outline--blue(target="_blank", href='/download/recomendaciones_de_egreso_altas.pdf')
+                                                    | Recomendaciones
                                     #subAccordion.accordion
                                         .subcard.position-relative
                                             #headingOne.subcard_header
@@ -154,13 +157,17 @@ block content
                                     .action.my-5
                                         ul.list.list--inline.list_download.txt_upper
                                             li
-                                                a.btn_outline--blue(href="#") PREPARACION
+                                                a.btn_outline--blue(href="#")
+                                                    | PREPARACION
                                             li
-                                                a.btn_outline--blue(href="#") Preparación Travad
+                                                a.btn_outline--blue(target="_blank", href='/download/preparacion-travad_oral.pdf')
+                                                    | Preparación Travad
                                             li
-                                                a.btn_outline--blue(href="#") Consentimiento
+                                                a.btn_outline--blue(target="_blank", href='/download/consentimiento-bajas.pdf')
+                                                    | Consentimiento
                                             li
-                                                a.btn_outline--blue(href="#") Recomedaciones
+                                                a.btn_outline--blue(target="_blank", href='/download/recomendaciones_bajos.pdf')
+                                                    | Recomedaciones
                                     #subAccordion2.accordion
                                         .subcard.position-relative
                                             #headingOne2.subcard_header
@@ -238,11 +245,14 @@ block content
                                     .action.my-5
                                         ul.list.list--inline.list_download.txt_upper
                                             li
-                                                a.btn_outline--blue(href="#") PREPARACION
+                                                a.btn_outline--blue(target="_blank", href='/download/PREPARACION_PARA_VIDEOCAPSULA.pdf')
+                                                    | PREPARACION
                                             li
-                                                a.btn_outline--blue(href="#") Consentimiento
+                                                a.btn_outline--blue(target="_blank", href='/download/consentimiento-bajas.pdf')
+                                                    | Consentimiento
                                             li
-                                                a.btn_outline--blue(href="#") Recomedaciones
+                                                a.btn_outline--blue(target="_blank", href='/download/recomendaciones.pdf')
+                                                    | Recomedaciones
 
                                     #subAccordion7.accordion
                                         .subcard.position-relative
@@ -271,6 +281,7 @@ block content
                                                             p En la consulta de su médico, tendrá una entrevista de pre-procedimiento. Durante esta entrevista deberá ser informado de que la capsulo-endoscopia conlleva un mínimo riesgo de sufrir obstrucción intestinal. Será entonces registrado y se le pedirá su consentimiento.
                                                         li
                                                             p Se le acoplará el SensorArray a su abdomen con parches adhesivos y será conectado al DataRecorder que llevará en un cinturón alrededor de la cintura. A continuación se le indicará que ingiera la Cápsula PillCam SB.
+                                                    br
                                         .subcard.position-relative
                                             #headingThree7.subcard_header
                                                 h5.mb-0
@@ -311,6 +322,7 @@ block content
                                                             p Si no puede asegurar haber excretado la Cápsula PillCam SB de su organismo, y desarrolla nauseas, dolor abdominal o vómitos sin motivo aparente tras el procedimiento, contacte con su médico para ser evaluado y para un posible examen de rayos X.
                                                         li
                                                             p La realización de un examen de resonancia magnética mientras la cápsula esté en su interior puede provocar un serio daño a su tracto intestinal o a su cavidad abdominal. Si no puede asegurar haber excretado la Cápsula PillCam SB de su organismo, deberá contactar con su médico para ser evaluado y para un posible examen de rayos X abdominal antes de someterse a una resonancia magnética.
+                        //Item 4
                         .card
                             #heading8.card-header.position-relative
                                 h5.mb-0
@@ -334,10 +346,12 @@ block content
                                     .action.my-5
                                         ul.list.list--inline.list_download.txt_upper
                                             li
-                                                a.btn_outline--blue(href="#") Consentimiento
+                                                a.btn_outline--blue(target="_blank", href='/download/consentimiento-altas.pdf')
+                                                    | Consentimiento
                                             li
-                                                a.btn_outline--blue(href="#") Recomendaciones
-
+                                                a.btn_outline--blue(target="_blank", href='/download/recomendaciones_post_balon.pdf')
+                                                    | Recomendaciones
+                        //Item 5
                         .card
                             #heading9.card-header.position-relative
                                 h5.mb-0
@@ -346,9 +360,109 @@ block content
                                         span.icon.icon_acc
                                         span Preparación Colonoscopia
                             #collapse9.collapse(aria-labelledby='heading9' data-parent='#accordionExample')
-                                .card-body
-                                    p.cl--gray Lorem ipsum dolor sit amet consectetur adipiscing elit, mi vehicula scelerisque class praesent rhoncus, tempor commodo pretium proin congue hac. Nullam curabitur proin feugiat cursus posuere risus gravida montes, tellus ultricies orci maecenas molestie suscipit dapibus, mus fusce convallis nostra rutrum est sed. Vehicula et euismod pulvinar nascetur orci pharetra odio suscipit, nostra curabitur sed eleifend nulla felis nunc, ultricies tristique scelerisque arcu ut mollis tempor.
+                                .card-body.cl--gray
+                                    p Lea cuidadosamente las siguientes instrucciones y de esta manera obtendrá una buena preparación, requisito indispensable para un examen de buena calidad.
+                                    br
+                                    h5.txt_bold Día anterior al examen:
+                                    br
+                                    small.txt_italic * Desayuno: dieta líquida: café con leche, jugos, té, gelatina, compotas, agua de panela, agua.
+                                    br
+                                    small.txt_italic * Almuerzo debe ser líquidos: Cremas, jugos sin leche, té en agua, aromáticas, agua de panela, agua.
+                                    br
+                                    small.txt_italic * Evitar el consumo de vegetales. No consumir lácteos, jugo de guayaba.
+                                    br
+                                    small.txt_italic * Comida: consomé, aromática, té en agua o jugos comerciales en agua sin pulpa.
+                                    br
+                                    small.txt_italic * Si usted sufre de estreñimiento debe tomar abundantes líquidos durante este día.
+                                    br
+                                    small.txt_italic * No consumir nada con semilla, cilantro ni cebolla.
+                                    br
+                                    small.txt_italic * Dejar de consumir goma de masticar (chicle)
+                                    br
+                                    small.txt_italic * Asistir al procedimiento sin maquillaje en las uñas de las manos
+                                    br
+                                    br
+                                    b CONFIRME SU ASISTENCIA a los teléfonos 530 13 49 (directo) o al 530 04 70 extensión 1471.
+                                    br
+                                    br
+                                    ul.list.list--inline.list_download.txt_upper
+                                        li
+                                            a.btn_outline--blue(target="_blank", href="/download/PREPARACION_PARA_ENCOSCOPIA _DIGESTIVA_BAJA.pdf")
+                                                | PREPARACION
+                                        li
+                                            a.btn_outline--blue(target="_blank", href='/download/consentimiento-bajas.pdf')
+                                                | Consentimiento
+                                        li
+                                            a.btn_outline--blue(target="_blank", href='/download/recomendaciones_de_egreso_altas.pdf')
+                                                | Recomedaciones
+                                    #subAccordion9.accordion
+                                        .subcard.position-relative
+                                            #headingOne9.subcard_header.position-relative
+                                                h5.mb-0
+                                                    button.btn.btn_ghost(type='button' data-toggle='collapse' data-target='#collapseOne9' aria-expanded='true' aria-controls='collapseOne9')
+                                                    .title.pl-3.py-4.py-3--darkgray
+                                                        span.icon.icon_subacc
+                                                        span Toma de la preparación
+                                            #collapseOne9.collapse.show(aria-labelledby='headingOne9' data-parent='#subAccordion9')
+                                                .card-body.cl--gray
+                                                    p Sugerencia: Al iniciar la preparación tome 1 hora antes una tableta de Plasil® (Meroclopramida) para una mejor tolerancia a la misma. Se recomienda utilizar:
+                                                    br
+                                                    ul.list_simple
+                                                        li
+                                                            p Klean-prep® 4 Sobres,
+                                                        li
+                                                            p   Nulytely®. 4 Sobres,
+                                                        li
+                                                            p   Clearovac® 4 sobres,
+                                                        li
+                                                            p   Travad oral 3 frascos.(Comprar solo una de las marcas sugeridas)
+                                                    br
+                                                    ul.list.list--inline.list_download.txt_upper
+                                                        li
+                                                            a.btn_outline--blue(target="_blank", href='/download/preparacion-travad_oral.pdf')
+                                                                | PREPARACION Travad
+                                                    br
+                                                    ul.list_simple
+                                                        li
+                                                            p Cada una de las preparaciones que contienen cuatro sobres deben ser preparadas e ingeridas de la siguiente manera (aplica para el Colyte, solo que este se prepara directamente en su envase).
+                                                        li
+                                                            p Cada sobre debe diluirse en un litro de agua fría. Los sobre traen un sabor que la mayoría pacientes tolera adecuadamente. Sin embargo, si el sabor le desagrada puede adicionar a la preparación Clight® o Gatorade®, teniendo la precaución de no utilizar aquellos de colores como el rojo azul o uva entre otros, dado que pueden impedir una valoración adecuada del colon, o incluso ser confundidos con sangrado.
+                                                        li
+                                                            p Empiece a tomar la preparación a las 2 pm: tome un vaso ( 250 cc) cada 15 ó 20 minutos hasta que termine los cuatro litros.
+                                                        li
+                                                            p Mantenga la solución permanentemente en la nevera. IDEALMENTE DESPUES DE TERMINADA LA PREPARACIÓN CONTINUAR TOMANDO AGUA.
+                                                        li
+                                                            p Es importante que se encuentre en un lugar cómodo (idealmente en su casa) porque va a presentar múltiples evacuaciones intestinales.
+                                                        li
+                                                            p Si toma medicamentos para la presión o para el corazón debe tomarlos como lo hace habitualmente y consultar al médico solicitante en caso de consumir aspirina o warfarina.
+                                                    br
+                                                    b ¡ De la buena preparación depende el éxito de su examen !
+                                        .subcard.position-relative
+                                            #headingTwo9.subcard_header.position-relative
+                                                h5.mb-0
+                                                    button.btn.btn_ghost(type='button' data-toggle='collapse' data-target='#collapseTwo9' aria-expanded='false' aria-controls='collapseTwo9')
+                                                    .title.pl-3.py-4.py-3--darkgray
+                                                        span.icon.icon_subacc
+                                                        span Día del examen
+                                            #collapseTwo9.collapse(aria-labelledby='headingTwo9' data-parent='#subAccordion9')
+                                                .card-body.cl--gray
+                                                    p Dirigirse al 6º piso de la Clínica del Country. Cra 16 No. 82-57
+                                                    br
+                                                    ul.list_simple
+                                                        li
+                                                            p Traer la orden debidamente autorizada y vigente. Cancelar copago si se requiere.
+                                                        li
+                                                            p Debe venir con un acompañante mayor de edad.
+                                                        li
+                                                            p El paciente debe presentarse en ropa cómoda.
+                                                        li
+                                                            p El paciente no puede conducir vehículo, ni realizar actividades que requieran atención durante el resto del día.
+                                                        li
+                                                            p No ingerir alimentos ni bebidas antes de 4 horas a la realización del procedimiento y 8 horas si adicionalmente está programado para endoscopia alta.
+                                                        li
+                                                            p No ingresar con joyas, celulares, ni elementos de valor. Es preferible que estos elementos los entregue a su acompañante.
 
+                        //Item 6
                         .card
                             #heading10.card-header.position-relative
                                 h5.mb-0
@@ -357,9 +471,17 @@ block content
                                         span.icon.icon_acc
                                         span PH-metria
                             #collapse10.collapse(aria-labelledby='heading10' data-parent='#accordionExample')
-                                .card-body
-                                    p.cl--gray Lorem ipsum dolor sit amet consectetur adipiscing elit, mi vehicula scelerisque class praesent rhoncus, tempor commodo pretium proin congue hac. Nullam curabitur proin feugiat cursus posuere risus gravida montes, tellus ultricies orci maecenas molestie suscipit dapibus, mus fusce convallis nostra rutrum est sed. Vehicula et euismod pulvinar nascetur orci pharetra odio suscipit, nostra curabitur sed eleifend nulla felis nunc, ultricies tristique scelerisque arcu ut mollis tempor.
-
+                                .card-body.cl--gray
+                                    p Consiste en pasar al esófago un cable muy delgado que se deja conectado a una grabadora por 24 horas, para medir el grado de acidez en el esófago. El examen es ambulatorio.
+                                    br
+                                    h5.txt_bold ¿Cuándo esta indicado llevar a cabo estos estudios?
+                                    br
+                                    p La pHmetria está indicada cuando el paciente tiene mucha acidez y los hallazgos por endoscopia no coinciden con los síntomas del paciente. También puede usarse cuando el paciente no responde al tratamiento antiácido habitual o cuando el paciente tiene síntomas atípicos de la enfermedad por reflujo gastroesofagico, como tos o ronquera crónica y algunos casos de asma de difícil control.
+                                    ul.list.list--inline.list_download.txt_upper
+                                        li
+                                            a.btn_outline--blue(target="_blank", href="/download/PREPARACION_PARA_PH_ METRIA.pdf")
+                                                | PREPARACION
+                        //Item 7
                         .card
                             #heading11.card-header.position-relative
                                 h5.mb-0
@@ -368,9 +490,20 @@ block content
                                         span.icon.icon_acc
                                         span Enteroscopia
                             #collapse11.collapse(aria-labelledby='heading11' data-parent='#accordionExample')
-                                .card-body
-                                    p.cl--gray Lorem ipsum dolor sit amet consectetur adipiscing elit, mi vehicula scelerisque class praesent rhoncus, tempor commodo pretium proin congue hac. Nullam curabitur proin feugiat cursus posuere risus gravida montes, tellus ultricies orci maecenas molestie suscipit dapibus, mus fusce convallis nostra rutrum est sed. Vehicula et euismod pulvinar nascetur orci pharetra odio suscipit, nostra curabitur sed eleifend nulla felis nunc, ultricies tristique scelerisque arcu ut mollis tempor.
-
+                                .card-body.cl--gray
+                                    p La enteroscopia, es una herramienta nueva que se dispone para la evaluación endoscópica del intestino delgado, se puede hacer por vía oral o anal, dependiendo de la historia clinica y paraclínicos del paciente, para lo cual se dispone de un enteroscopio de un balón marca Olympus (SIF Q 180). Previo a su realización el paciente ha recibido las mismas indicaciones como para una colonoscopia.
+                                    br
+                                    b Por favor descargue e imprima el consentimiento lealo y entreguelo firmado el día de su procedimiento.
+                                    br
+                                    br
+                                    ul.list.list--inline.list_download.txt_upper
+                                        li
+                                            a.btn_outline--blue(target="_blank", href='/download/consentimiento-altas.pdf')
+                                                | Consentimiento
+                                        li
+                                            a.btn_outline--blue(target="_blank", href="/download/recomendaciones_de_egreso_altas.pdf")
+                                                | Recomendaciones
+                        //Item 8
                         .card
                             #heading12.card-header.position-relative
                                 h5.mb-0
@@ -379,5 +512,81 @@ block content
                                         span.icon.icon_acc
                                         span Ecoendoscopia
                             #collapse12.collapse(aria-labelledby='heading12' data-parent='#accordionExample')
-                                .card-body
-                                    p.cl--gray Lorem ipsum dolor sit amet consectetur adipiscing elit, mi vehicula scelerisque class praesent rhoncus, tempor commodo pretium proin congue hac. Nullam curabitur proin feugiat cursus posuere risus gravida montes, tellus ultricies orci maecenas molestie suscipit dapibus, mus fusce convallis nostra rutrum est sed. Vehicula et euismod pulvinar nascetur orci pharetra odio suscipit, nostra curabitur sed eleifend nulla felis nunc, ultricies tristique scelerisque arcu ut mollis tempor. user
+                                .card-body.cl--gray
+                                    p La enteroscopia, es una herramienta nueva que se dispone para la evaluación endoscópica del intestino delgado, se puede hacer por vía oral o anal, dependiendo de la historia clinica y paraclínicos del paciente, para lo cual se dispone de un enteroscopio de un balón marca Olympus (SIF Q 180). Previo a su realización el paciente ha recibido las mismas indicaciones como para una colonscopia. Previo a su realización el paciente ha recibido las mismas indicaciones como para una colonoscopia.
+                                    br
+                                    b Por favor descargue e imprima el consentimiento lealo y entreguelo firmado el día de su procedimiento.
+                                    br
+                                    br
+                                    ul.list.list--inline.list_download.txt_upper
+                                        li
+                                            a.btn_outline--blue(target="_blank", href='/download/consentimiento-altas.pdf')
+                                                | Cosentimiento
+                                        li
+                                            a.btn_outline--blue(target="_blank", href="#")
+                                                | Recomendaciones
+                                    br
+                                    #subAccordion12.accordion
+                                        .subcard.position-relative
+                                            #headingOne12.subcard_header.position-relative
+                                                h5.mb-0
+                                                    button.btn.btn_ghost(type='button' data-toggle='collapse' data-target='#collapseOne12' aria-expanded='true' aria-controls='collapseOne12')
+                                                    .title.pl-3.py-4.py-3--darkgray
+                                                        span.icon.icon_subacc
+                                                        span ¿Qué es una USE?
+                                            #collapseOne12.collapse.show(aria-labelledby='headingOne' data-parent='#subAccordion12')
+                                                .card-body
+                                                    p Pacientes con síntomas digestivos tales como cambios en el hábito intestinal, cambios en las características de la materia fecal, distensión o dolor abdominal, sangrado digestivo bajo (sangre sola o con la materia fecal). Pacientes con anemia crónica, deterioro de sus condiciones genereles y/o pérdida progresiva de peso, paciente con enfermedad previa para control y seguimiento, paciente con riesgo mayor para cáncer del colon y el recto.
+                                                    br
+                                        .subcard.position-relative
+                                            #headingTwo12.subcard_header.position-relative
+                                                h5.mb-0
+                                                    button.btn.btn_ghost(type='button' data-toggle='collapse' data-target='#collapseTwo12' aria-expanded='false' aria-controls='collapseTwo12')
+                                                    .title.pl-3.py-4.py-3--darkgray
+                                                        span.icon.icon_subacc
+                                                        span Preparación para su ecoendoscopia(USE)
+                                            #collapseTwo12.collapse(aria-labelledby='headingTwo12' data-parent='#subAccordion12')
+                                                .card-body
+                                                    p Si su médico le solicitó una USE baja (recto): En la mañana del examen deberá prepararse mediante 1 enema de limpieza por vía rectal.
+                                                    br
+                                                    p Si su médico le solicitó una USE alta (esófago, mediastino, estómago,páncreas): No coma ni beba nada en las 8 horas previas al examen. No tome la medicación para su diabetes, ni fármacos que alteren la coagulación, salvo que su médico habitual lo contraindique
+                                                    br
+                                                    p <b>Antibióticos:</b> Por regla general no es necesario administrar antibióticos para realizar esta prueba. En caso de realizarse punción de un quiste del páncreas, de una lesión rectal o si usted tiene historia previa de endocarditis, cardiopatía congénita o prótesis valvular debería realizarse profilaxis antibiótica previa a USE, que su médico le indicará.
+                                                    br
+                                                    p <b>Antidiabéticos/insulina:</b> Si usted tiene diabetes consulte con su médico habitual sobre la necesidad de prepararse para esta prueba y sus recomendaciones. Como norma general, en la mañana de la USE no tome pastillas para su diabetes, no se inyecte insulina y no coma hasta que haya finalizado su examen de USE (salvo que su médico habitual le haya recomendado otra pauta para control de su glucemia).
+                                                    br
+                                                    p <b>Anticoagulantes/antiagregantes:</b> Si usted está recibiendo Aspirina®, Sintrom®, heparina u otro tipo de medicamento que pueda alterar la coagulación de la sangre, haga saber a su médico habitual la necesidad de reajustar la dosis para poder realizar la USE.
+                                                    br
+                                        .subcard.position-relative
+                                            #headingThree12.subcard_header.position-relative
+                                                h5.mb-0
+                                                    button.btn.btn_ghost(type='button' data-toggle='collapse' data-target='#collapseThree12' aria-expanded='false' aria-controls='collapseThree12')
+                                                    .title.pl-3.py-4.py-3--darkgray
+                                                        span.icon.icon_subacc
+                                                        span ¿Me van a administrar alguna medicación "relajante"?:
+                                            #collapseThree12.collapse(aria-labelledby='headingThree12' data-parent='#subAccordion12')
+                                                .card-body
+                                                    p Antes de comenzar el examen se le administrará oxígeno y medicación intravenosa para que esté más relajado (sedación). Es importante que recuerde que en las primeras 24 horas después de la sedación, su capacidad de reacción y de juicio pueden estar ligeramente disminuidas. Por dicho motivo se le recomienda que en esas 24 horas no realice ninguna actividad que requiera el pleno uso de sus facultades mentales o físicas (conducción de automóviles, trabajo, toma de decisiones de cualquier tipo, ingesta de alcohol, etc.). Asimismo, le recomendamos que venga acompañado por algún familiar para volver a su domicilio.
+                                                    br
+                                        .subcard.position-relative
+                                            #headingfour12.subcard_header.position-relative
+                                                h5.mb-0
+                                                    button.btn.btn_ghost(type='button' data-toggle='collapse' data-target='#collapsefour12' aria-expanded='false' aria-controls='collapsefour12')
+                                                    .title.pl-3.py-4.py-3--darkgray
+                                                        span.icon.icon_subacc
+                                                        span Examen USE
+                                            #collapsefour12.collapse(aria-labelledby='headingfour12' data-parent='#subAccordion12')
+                                                .card-body
+                                                    p Será conducido a la sala de ecoendoscopia donde estará el médico que le asistirá durante la exploración. Se le tumbará en una camilla sobre su lado izquierdo, se le colocará una protección para los dientes (USE alta) y, tras inyección de sedación por vía intravenosa, se le introducirá un endoscopio (vía oral o rectal según indicación) hasta alcanzar la zona de interés en la que se realizará el estudio. En algunos casos puede ser necesario dilatar zonas de estenosis para completar el estudio. En otras ocasiones puede ser necesario la realización de biopsias guiadas por USE para ayudar a establecer el diagnóstico definitivo o incluso se pueden inyectar sustancias analgésicas como parte del tratamiento de su patología. Por lo general la prueba no es dolorosa, dura entre 30 y 60 minutos y, al terminarla, el tiempo de observación en la sala de despertar es de unos 60 minutos. Tras el examen USE, reanude su dieta y medicamentos habituales según la pauta recomendada por su médico (reinicio de antidiabéticos y anticoagulantes bajo control estricto de su médico).
+                                                    br
+                                        .subcard.position-relative
+                                            #headingfive12.subcard_header.position-relative
+                                                h5.mb-0
+                                                    button.btn.btn_ghost(type='button' data-toggle='collapse' data-target='#collapsefive12' aria-expanded='false' aria-controls='collapsefive12')
+                                                    .title.pl-3.py-4.py-3--darkgray
+                                                        span.icon.icon_subacc
+                                                        span Riesgos de la USE
+                                            #collapsefive12.collapse(aria-labelledby='headingfofive' data-parent='#subAccordion12')
+                                                .card-body
+                                                    p Las complicaciones de la USE (infección, sangrado, pancreatitis) son raras (menos del 1%) y generalmente leves. En ocasiones pueden ocurrir complicaciones más severas como por ejemplo perforación o complicaciones derivadas de la sedación. Si después del examen USE, usted experimenta fiebre (38 ºC), vómitos de sangre, heces negras, dolor en el pecho, cuello o abdomen, consulte inmediatamente con el gastroenterólogo de guardia más cercano.
+                                                    br

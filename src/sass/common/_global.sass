@@ -38,7 +38,7 @@ a
     color: $lightBlue
     font-size: 1.6rem
     transition: $trs-site
-    font-weight: 700
+    font-weight: 400
     +press
         color: $blueBox
         text-decoration: none
@@ -53,7 +53,7 @@ input, textarea, select
 p
     font-family: $second-font
     font-weight: 100
-    color: rgba($black, .40)
+    color: $gray
     line-height: 1.5em
     +font-size(1.7)
     margin: 0
@@ -68,20 +68,32 @@ h1, h2, h3, h4, h5, h6
 /* headings */
 h1
     +font-size(3.2)
+    +MQMAX(S)
+        font-size: 234%
 h2
     +font-size(2.8)
+    +MQMAX(S)
+        font-size: 200%
 h3
     +font-size(2.4)
+    +MQMAX(S)
+        font-size: 180%
 h4
     +font-size(2)
+    +MQMAX(S)
+        font-size: 125%
 h5
     +font-size(1.6)
+    +MQMAX(S)
+        font-size: 100%
 h6
     +font-size(1.2)
+    +MQMAX(S)
+        font-size: 95%
 
 
-b
-    font-weight: 400
+b, strong
+    font-weight: 700
 
 ul, ul>li
     list-style: none
