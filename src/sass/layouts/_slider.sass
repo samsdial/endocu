@@ -16,11 +16,15 @@
 .slider
   &_intro--about
     li.slider_item
-      min-height: 110vh
+      min-height: 360px
       background-attachment: fixed
-      background-position: center 45px
-      background-size: cover
+      background-position: center 120px
+      background-size: contain
       background-repeat: no-repeat
+      +MQ(M)
+        min-height: 110vh
+        background-size: cover
+        background-position: center 45px
       &.item--01
         background-image: url('#{$gitPath}slider_about/img-001.jpg')
       &.item--02
@@ -37,7 +41,7 @@
       bottom: inherit
       width: 100%
       z-index: 300
-      top: -300px
+      top: -35px
       +MQ(M)
         text-align: left
         padding: 5px 260px
